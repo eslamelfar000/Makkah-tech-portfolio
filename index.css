@@ -1,0 +1,498 @@
+/* ============================================================
+   index.css — Makkah Tech | Shared CSS (non-Tailwind utilities)
+   Link this file in every page ALONGSIDE the inline
+   <style type="text/tailwindcss"> block.
+   Only styles that cannot be cleanly written as Tailwind
+   utility classes live here.
+   ============================================================ */
+
+/* ── 1. Keyframe Animations ── */
+@keyframes gradient {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.25rem);
+  }
+}
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.animate-gradient {
+  animation: gradient 8s linear infinite;
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ── 2. Hero Mesh Background ── */
+.hero-mesh {
+  position: relative;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 20%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%);
+}
+.light .hero-mesh {
+  background-image:
+    radial-gradient(at 10% 10%, hsla(240, 100%, 95%, 1) 0, transparent 50%),
+    radial-gradient(at 90% 90%, hsla(210, 100%, 95%, 1) 0, transparent 50%);
+}
+
+/* ── 3. Hero Swiper Slide Animations ── */
+.heroSwiper .swiper-slide {
+  overflow: hidden;
+}
+
+.heroSwiper .slide-content {
+  opacity: 0;
+  transform: translateY(2.5rem);
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
+}
+.heroSwiper .swiper-slide-active .slide-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.heroSwiper .slide-image {
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 1s ease-out 0.3s,
+    transform 1s ease-out 0.3s;
+}
+.heroSwiper .swiper-slide-active .slide-image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── 4. Shimmer Card Effect (used on service, project & tech cards) ── */
+.shimmer-card {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shimmer-card:hover::after {
+  left: 150%;
+}
+
+/* ── 5. Swiper Premium Pagination ── */
+.swiper-pagination-bullet {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  background: rgba(105, 105, 105, 0.2) !important;
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+  transition: all 0.3s !important;
+}
+.swiper-pagination-bullet-active {
+  width: 2.5rem !important;
+  background: #2550ff !important;
+  border-radius: 9999px !important;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+/* ── 6. Project Page — Swiper Nav Buttons ── */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  background: #1a3de6;
+  border-radius: 9999px;
+  transition: background 0.3s;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.25rem !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #2550ff;
+}
+.light .swiper-button-next,
+.light .swiper-button-prev {
+  background: #4f46e5;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+.light .swiper-button-next:hover,
+.light .swiper-button-prev:hover {
+  background: #4338ca;
+}
+
+/* ── 7. Filter Buttons (our_projects page) ── */
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #94a3b8;
+}
+.filter-btn:hover {
+  border-color: rgba(37, 80, 255, 0.5);
+  background-color: rgba(37, 80, 255, 0.1);
+  color: #ffffff;
+}
+.filter-btn.active {
+  background-color: #1a3de6;
+  border-color: #2550ff;
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(37, 80, 255, 0.2);
+}
+.light .filter-btn {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #475569;
+}
+.light .filter-btn:hover {
+  background-color: #f1f5f9;
+}
+.light .filter-btn.active {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* ── 8. Project Cards ── */
+.project-card {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* ── 8. Base & Component Styles ── */
+body {
+  background-color: #020617; /* dark-bg */
+  color: #f1f5f9; /* dark-text */
+  font-family: "El Messiri", "IBM Plex Sans Arabic", "Outfit", sans-serif;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+  line-height: 1.5;
+}
+
+body::selection {
+  background-color: #2550ff; /* primary-500 */
+  color: #ffffff;
+}
+
+body.light {
+  background-color: #f8fafc; /* light-bg */
+  color: #0f172a; /* light-text */
+  background-image:
+    radial-gradient(at 0% 0%, hsla(210, 100%, 98%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(220, 100%, 96%, 1) 0, transparent 50%);
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.light .glass-card {
+  background-color: rgba(200, 200, 200, 0.4) !important;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+
+}
+
+.glass-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(37, 80, 255, 0.3);
+  box-shadow: 0 25px 50px -12px rgba(37, 80, 255, 0.1);
+}
+
+.light .glass-card {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.1);
+}
+
+.light .glass-card:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: #5c8aff;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: #1a3de6;
+  color: #ffffff;
+  border-radius: 1rem;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 25px -5px rgba(37, 80, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #2550ff;
+  box-shadow: 0 20px 25px -5px rgba(37, 80, 255, 0.4);
+  transform: translateY(-0.25rem);
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.light .btn-primary {
+  background-color: #4f46e5;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.light .btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.nav-link {
+  color: #94a3b8;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2550ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.light .nav-link {
+  color: #475569;
+}
+
+.light .nav-link:hover {
+  color: #4f46e5;
+}
+
+.light .nav-link::after {
+  background-color: #4f46e5;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, #5c8aff, #00f5ff, #2550ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+
+.light .text-gradient {
+  background-image: linear-gradient(to right, #4f46e5, #9333ea, #2563eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #2550ff;
+  color: #2550ff;
+  transform: translateY(-0.25rem);
+}
+
+.light .btn-outline {
+  color: #1e293b;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light .btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-color: #4f46e5;
+  color: #4f46e5;
+}/* ── 9. Filter Buttons ── */
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+.light .filter-btn {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+.light .filter-btn:hover, .light .filter-btn.active {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* ── 10. Pricing Cards ── */
+.pricing-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pricing-card:hover {
+  transform: translateY(-1rem);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(37, 80, 255, 0.3);
+}
+.pricing-card.popular {
+  border-color: rgba(37, 80, 255, 0.5);
+  background-color: rgba(37, 80, 255, 0.05);
+}
+.light .pricing-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+.light .pricing-card.popular {
+  background-color: #ffffff;
+  border-color: #4f46e5;
+  box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.15);
+}
+
+/* ── 11. Glass Card ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.03);
+}
+
+/* ── 12. FAQ Section ── */
+.faq-btn i {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-btn.active i {
+  transform: rotate(45deg);
+}
+.light .faq-btn {
+  background: transparent;
+}
+
+/* ── 13. Custom Cursor ── */
+#cursor, #cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+#cursor {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4f46e5;
+  transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+#cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: #4f46e5;
+}
+
+/* Hide on mobile/touch */
+@media (pointer: coarse) {
+  #cursor, #cursor-dot {
+    display: none !important;
+  }
+}

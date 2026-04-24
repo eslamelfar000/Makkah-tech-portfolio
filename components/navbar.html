@@ -1,0 +1,56 @@
+<!-- Main Navigation -->
+<nav id="navbar" class="absolute top-0 left-0 right-0 z-[1000] transition-all duration-500 py-4 md:py-16">
+    <div class="px-6">
+        <div class="glass-card px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter flex items-center gap-3 group">
+                <div
+                    class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                    <i class="fa-solid fa-cube text-white"></i>
+                </div>
+                <span
+                    class="bg-gradient-to-l from-white to-slate-400 light:from-slate-900 light:to-slate-500 bg-clip-text text-transparent">مكة
+                    للتقنية</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="about.html" class="nav-link">عن الشركة</a>
+                <a href="services.html" class="nav-link">الخدمات</a>
+                <div class="relative group">
+                    <button class="nav-link flex items-center gap-2">
+                        الأسعار <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                    </button>
+                    <div
+                        class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="glass-card w-64 p-4 flex flex-col gap-2 shadow-2xl">
+                            <a href="hosting.html"
+                                class="p-3 hover:bg-primary-500/10 rounded-xl transition-colors">استضافة المواقع</a>
+                            <a href="e-commerce.html"
+                                class="p-3 hover:bg-primary-500/10 rounded-xl transition-colors">المتاجر الإلكترونية</a>
+                            <a href="portfolio.html"
+                                class="p-3 hover:bg-primary-500/10 rounded-xl transition-colors">المواقع التعريفية</a>
+                            <a href="systems.html"
+                                class="p-3 hover:bg-primary-500/10 rounded-xl transition-colors">أنظمة متخصصة</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="our_projects.html" class="nav-link">أعمالنا</a>
+                <a href="contact.html" class="nav-link">تواصل معنا</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="w-10 h-10 glass-card flex items-center justify-center relative overflow-hidden group">
+                    <i
+                        class="fa-solid fa-moon absolute transition-all duration-500 group-hover:scale-110 light:scale-0 light:opacity-0"></i>
+                    <i
+                        class="fa-solid fa-sun absolute transition-all duration-500 group-hover:rotate-90 scale-0 opacity-0 light:scale-100 light:opacity-100 text-yellow-500"></i>
+                </button>
+                <a href="contact.html" class="hidden md:flex btn-primary !py-2.5 !px-6 text-sm">ابدأ مشروعك</a>
+                <button id="mobile-menu-btn"
+                    class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 glass-card !p-0">
+                    <span class="w-5 h-0.5 bg-current transition-all"></span>
+                    <span class="w-5 h-0.5 bg-current transition-all"></span>
+                    <span class="w-5 h-0.5 bg-current transition-all"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

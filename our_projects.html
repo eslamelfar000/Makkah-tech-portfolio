@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="smooth-scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمالنا | مكة للتقنية</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+
+</head>
+
+<body class="antialiased">
+
+    <!-- Custom Cursor -->
+    <div id="cursor-placeholder"></div>
+
+    <div id="top-nav-placeholder"></div>
+    <div id="main-nav-placeholder"></div>
+    <div id="mobile-menu-placeholder"></div>
+
+    <!-- Header Section Improved -->
+    <section class="pt-48 pb-24 relative overflow-hidden transition-colors duration-500 bg-dark-bg light:bg-white">
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-600/5 blur-[120px] rounded-full pointer-events-none">
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <!-- Integrated Breadcrumbs -->
+            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12"
+                data-aos="fade-down">
+                <a href="index.html" class="hover:text-primary-500 transition-colors">الرئيسية</a>
+                <i class="fa-solid fa-angle-left text-[10px]"></i>
+                <span class="text-primary-500 font-medium">أعمالنا</span>
+            </nav>
+
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 text-white dark:text-white light:text-slate-900"
+                data-aos="fade-up">معرض <span class="text-gradient">إبداعاتنا</span></h1>
+            <p class="text-xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic"
+                data-aos="fade-up">
+                نستعرض هنا نخبة من المشاريع الرقمية التي قمنا بتطويرها، حيث تلتقي التكنولوجيا بالإبداع لتحقيق نتائج
+                استثنائية لعملائنا.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Grid with Filter -->
+    <section class="py-24 bg-dark-bg light:bg-slate-50 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <!-- Filter Bar -->
+            <div class="flex flex-wrap justify-center gap-3 mb-16" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="e-commerce">متاجر إلكترونية</button>
+                <button class="filter-btn" data-filter="mop-app">تطبيقات الجوال</button>
+                <button class="filter-btn" data-filter="websites">المواقع والأنظمة</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item group relative h-[550px] [perspective:1000px] overflow-hidden rounded-[2.5rem]"
+                    data-category="e-commerce" data-aos="fade-up">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-1.jpg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Default State -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-8 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-xs font-bold mb-2 block uppercase tracking-wider">متاجر
+                                إلكترونية</span>
+                            <h4 class="text-2xl font-bold text-white">منصة أعلاف الإلكترونية</h4>
+                        </div>
+
+                        <!-- Hover State -->
+                        <div
+                            class="absolute inset-0 p-6 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-[2rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg shadow-lg shadow-primary-500/30">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">منصة أعلاف</h4>
+                                </div>
+                                <p class="text-slate-300 text-xs leading-relaxed mb-6">أكبر سوق إلكتروني لتجارة الأعلاف
+                                    والمستلزمات الزراعية مع نظام إدارة متكامل.</p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-3 px-5 bg-white/10 rounded-xl border border-white/10 hover:bg-primary-500 hover:border-primary-500 transition-all duration-300">
+                                    <span class="text-xs font-bold text-white">استكشف المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left text-xs group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item group relative h-[550px] [perspective:1000px] overflow-hidden rounded-[2.5rem]"
+                    data-category="mop-app" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-2.jpeg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">تطبيقات
+                                الجوال</span>
+                            <h4 class="text-3xl font-bold text-white">تطبيق عابر للمواصلات</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[2.5rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-accent-cyan text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-cyan-500/30">
+                                        <i class="fa-solid fa-car"></i>
+                                    </div>
+                                    <h4 class="text-2xl font-bold text-white">تطبيق عابر</h4>
+                                </div>
+                                <p class="text-slate-300 text-sm leading-relaxed mb-8">حل ذكي متكامل لطلب سيارات الأجرة
+                                    وخدمات التوصيل في جميع مدن المملكة.</p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-4 px-6 bg-white text-primary-600 rounded-2xl font-bold hover:bg-primary-50 transition-all duration-300">
+                                    <span>عرض تفاصيل المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item group relative h-[550px] [perspective:1000px] overflow-hidden rounded-[2.5rem]"
+                    data-category="e-commerce" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-3.jpeg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">متاجر
+                                إلكترونية</span>
+                            <h4 class="text-3xl font-bold text-white">متجر مظهر الجمال</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[2.5rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-purple-600 text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-purple-500/30">
+                                        <i class="fa-solid fa-spa"></i>
+                                    </div>
+                                    <h4 class="text-2xl font-bold text-white">متجر مظهر</h4>
+                                </div>
+                                <p class="text-slate-300 text-sm leading-relaxed mb-8">تجربة تسوق فريدة لمنتجات العناية
+                                    والجمال مع واجهة عصرية وتجربة مستخدم مذهلة.</p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-4 px-6 bg-white text-primary-600 rounded-2xl font-bold hover:bg-primary-50 transition-all duration-300">
+                                    <span>عرض تفاصيل المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (New) -->
+                <div class="project-item group relative h-[550px] [perspective:1000px] overflow-hidden rounded-[2.5rem]"
+                    data-category="websites" data-aos="fade-up">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-1.jpg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">الأنظمة
+                                السحابية</span>
+                            <h4 class="text-3xl font-bold text-white">نظام أصول المالي</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[2.5rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-green-600 text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-green-500/30">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                    </div>
+                                    <h4 class="text-2xl font-bold text-white">نظام أصول</h4>
+                                </div>
+                                <p class="text-slate-300 text-sm leading-relaxed mb-8">نظام محاسبي وإداري متطور للشركات
+                                    الكبرى لإدارة الموارد البشرية والمالية بدقة تامة.</p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-4 px-6 bg-white text-primary-600 rounded-2xl font-bold hover:bg-primary-50 transition-all duration-300">
+                                    <span>عرض تفاصيل المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 (New) -->
+                <div class="project-item group relative h-[550px] [perspective:1000px] overflow-hidden rounded-[2.5rem]"
+                    data-category="mop-app" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-2.jpeg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">تطبيقات
+                                الجوال</span>
+                            <h4 class="text-3xl font-bold text-white">تطبيق حجوزات طبي</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[2.5rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-red-600 text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-red-500/30">
+                                        <i class="fa-solid fa-heart-pulse"></i>
+                                    </div>
+                                    <h4 class="text-2xl font-bold text-white">حجوزاتي الطبية</h4>
+                                </div>
+                                <p class="text-slate-300 text-sm leading-relaxed mb-8">منصة متطورة لحجز المواعيد الطبية
+                                    وإدارة الملفات الصحية للمرضى بمنتهى الخصوصية.</p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-4 px-6 bg-white text-primary-600 rounded-2xl font-bold hover:bg-primary-50 transition-all duration-300">
+                                    <span>عرض تفاصيل المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

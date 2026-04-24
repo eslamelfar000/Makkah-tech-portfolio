@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="smooth-scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | مكة للتقنية</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body class="antialiased">
+
+    <!-- Custom Cursor -->
+    <div id="cursor-placeholder"></div>
+
+    <div id="top-nav-placeholder"></div>
+    <div id="main-nav-placeholder"></div>
+    <div id="mobile-menu-placeholder"></div>
+
+    <!-- Header Section -->
+    <section class="pt-48 pb-24 relative overflow-hidden transition-colors duration-500">
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0">
+            <div
+                class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-500/20 blur-[120px] rounded-full animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-cyan/10 blur-[120px] rounded-full">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Integrated Breadcrumbs -->
+            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12"
+                data-aos="fade-down">
+                <a href="index.html" class="hover:text-primary-500 transition-colors">الرئيسية</a>
+                <i class="fa-solid fa-angle-left text-[10px]"></i>
+                <span class="text-primary-500 font-medium">تواصل معنا</span>
+            </nav>
+
+            <div class="text-center">
+                <h1 class="text-5xl md:text-8xl font-bold mb-8 text-white dark:text-white light:text-slate-900 tracking-tight"
+                    data-aos="fade-up">دعنا <span class="text-gradient">نتحدث</span></h1>
+                <p class="text-xl md:text-2xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic"
+                    data-aos="fade-up" data-aos-delay="100">
+                    نحن هنا للإجابة على استفساراتك ومساعدتك في تحويل رؤيتك التقنية إلى واقع ملموس.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-24 bg-dark-bg light:bg-white transition-colors duration-500">
+        <div class="container mx-auto px-6 text-right">
+            <div class="grid lg:grid-cols-2 gap-20">
+                <!-- Contact Info -->
+                <div class="space-y-12" data-aos="fade-up">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-8 text-white dark:text-white light:text-slate-900">معلومات
+                            التواصل</h2>
+                        <div class="grid gap-8">
+                            <div class="glass-card p-8 flex items-center gap-6">
+                                <div
+                                    class="w-14 h-14 bg-primary-600/20 text-primary-500 rounded-2xl flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-1">الموقع
+                                    </h4>
+                                    <p class="text-slate-400 light:text-slate-600">الرياض، المملكة العربية السعودية</p>
+                                </div>
+                            </div>
+                            <div class="glass-card p-8 flex items-center gap-6">
+                                <div
+                                    class="w-14 h-14 bg-green-500/20 text-green-500 rounded-2xl flex items-center justify-center text-2xl">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-1">واتساب
+                                    </h4>
+                                    <p class="text-slate-400 light:text-slate-600" dir="ltr">+966 5XX XXX XXX</p>
+                                </div>
+                            </div>
+                            <div class="glass-card p-8 flex items-center gap-6">
+                                <div
+                                    class="w-14 h-14 bg-accent-cyan/20 text-accent-cyan rounded-2xl flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-1">البريد
+                                        الإلكتروني</h4>
+                                    <p class="text-slate-400 light:text-slate-600">info@makkah-tech.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-8 text-white dark:text-white light:text-slate-900">ساعات العمل
+                        </h2>
+                        <div class="glass-card p-8">
+                            <div class="flex items-center gap-6">
+                                <div
+                                    class="w-14 h-14 bg-white/5 dark:bg-white/5 light:bg-slate-100 text-slate-400 rounded-2xl flex items-center justify-center text-2xl">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-slate-400 light:text-slate-600">من 09:00 صباحاً حتى 06:00 مساءً</p>
+                                    <p class="text-primary-500 text-sm font-bold">بإستثناء الجمعة والإجازات الرسمية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div data-aos="fade-up">
+                    <div class="glass-card p-10 lg:p-16">
+                        <h2 class="text-3xl font-bold mb-10 text-white dark:text-white light:text-slate-900">أرسل لنا
+                            رسالة</h2>
+                        <form action="#" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-slate-400 mr-2">الاسم بالكامل</label>
+                                    <input type="text" placeholder="مثال: أحمد محمد" class="input-field">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-slate-400 mr-2">رقم الجوال</label>
+                                    <input type="text" placeholder="مثال: 05XXXXXXXX" class="input-field">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-slate-400 mr-2">البريد الإلكتروني</label>
+                                <input type="email" placeholder="example@domain.com" class="input-field">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-slate-400 mr-2">رسالتك</label>
+                                <textarea rows="6" placeholder="اكتب تفاصيل مشروعك هنا..."
+                                    class="input-field"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full !py-5 text-lg">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section
+        class="h-[500px] w-full grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13635.11408823602!2d31.753729200000006!3d31.309865999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1672265436774!5m2!1sar!2seg"
+            class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[999] bg-dark-bg/95 light:bg-white/95 backdrop-blur-2xl opacity-0 invisible transition-all duration-500 flex flex-col items-center justify-center gap-8">
+    <a href="about.html" class="text-3xl font-bold hover:text-primary-500 transition-colors">عن الشركة</a>
+    <a href="services.html" class="text-3xl font-bold hover:text-primary-500 transition-colors">الخدمات</a>
+    <div class="flex flex-col items-center gap-0 w-full max-w-xs">
+        <button id="pricing-toggle" class="text-3xl font-bold hover:text-primary-500 transition-colors flex items-center gap-3">
+            الأسعار
+            <i id="pricing-chevron" class="fa-solid fa-chevron-down text-base transition-transform duration-300"></i>
+        </button>
+        <div id="pricing-submenu" class="overflow-hidden max-h-0 transition-all duration-300 ease-in-out w-full mt-0">
+            <div class="flex flex-col items-center gap-4 pt-4">
+                <a href="hosting.html" class="text-xl text-slate-300 hover:text-primary-400 transition-colors">استضافة المواقع</a>
+                <a href="e-commerce.html" class="text-xl text-slate-300 hover:text-primary-400 transition-colors">المتاجر الإلكترونية</a>
+                <a href="portfolio.html" class="text-xl text-slate-300 hover:text-primary-400 transition-colors">المواقع التعريفية</a>
+                <a href="systems.html" class="text-xl text-slate-300 hover:text-primary-400 transition-colors">أنظمة متخصصة</a>
+            </div>
+        </div>
+    </div>
+    <a href="our_projects.html" class="text-3xl font-bold hover:text-primary-500 transition-colors">أعمالنا</a>
+    <a href="contact.html" class="text-3xl font-bold hover:text-primary-500 transition-colors">تواصل معنا</a>
+    <div class="flex gap-6 mt-8">
+        <a href="#" class="w-12 h-12 glass-card flex items-center justify-center hover:text-primary-500 transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+        <a href="#" class="w-12 h-12 glass-card flex items-center justify-center hover:text-primary-500 transition-colors"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+        <a href="#" class="w-12 h-12 glass-card flex items-center justify-center hover:text-primary-500 transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+    </div>
+</div>

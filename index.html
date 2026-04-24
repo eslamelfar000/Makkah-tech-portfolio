@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="smooth-scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكة للتقنية | الرؤية المستقبلية للحلول الرقمية</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+
+
+</head>
+
+<body class="antialiased">
+
+    <div id="cursor-placeholder"></div>
+    <div id="cursor-dot-placeholder"></div>
+    <div id="top-nav-placeholder"></div>
+    <div id="main-nav-placeholder"></div>
+    <div id="mobile-menu-placeholder"></div>
+
+    <!-- Creative Hero Slider -->
+    <section class="relative h-screen overflow-hidden hero-mesh">
+        <div class="swiper heroSwiper h-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1: Digital Solutions -->
+                <div class="swiper-slide flex items-center relative">
+
+                    <div class="container mx-auto px-6 relative z-10">
+                        <div class="grid xl:grid-cols-2 gap-16 items-center">
+                            <div class="text-right">
+                                <!-- Text Parallax (Horizontal) -->
+                                <div data-swiper-parallax-x="-300">
+                                    <span
+                                        class="slide-content inline-block px-4 py-2 bg-primary-500/10 border border-primary-500/20 rounded-full text-primary-400 light:text-indigo-600 light:bg-indigo-50 font-semibold text-sm mb-6">
+                                        نبتكر للمستقبل
+                                    </span>
+                                </div>
+                                <div data-swiper-parallax-x="-500">
+                                    <h1 class="slide-content delay-1 text-5xl md:text-8xl font-bold leading-tight mb-8">
+                                        نحول رؤيتك إلى <br>
+                                        <span class="text-gradient">واقع رقمي</span> مبهر
+                                    </h1>
+                                </div>
+                                <div data-swiper-parallax-x="-700">
+                                    <p
+                                        class="slide-content delay-2 text-xl text-slate-400 light:text-slate-600 mb-10 max-w-xl leading-relaxed">
+                                        نحن في مكة للتقنية نجمع بين الإبداع الفني والخبرة التقنية لنقدم لك حلولاً برمجية
+                                        متكاملة تضعك في المقدمة.
+                                    </p>
+                                </div>
+                                <div data-swiper-parallax-x="-900">
+                                    <div class="slide-content delay-3 flex flex-wrap gap-6 justify-start">
+                                        <a href="contact.html" class="btn-primary">ابدأ رحلتك معنا <i
+                                                class="fa-solid fa-arrow-left"></i></a>
+                                        <a href="our_projects.html"
+                                            class="flex items-center gap-4 group font-semibold hover:text-primary-400 light:text-slate-700 transition-colors">
+                                            <span
+                                                class="w-14 h-14 glass-card flex items-center justify-center group-hover:scale-110 transition-transform">
+                                                <i class="fa-solid fa-play text-primary-500"></i>
+                                            </span>
+                                            شاهد أعمالنا
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Image Parallax (Vertical) -->
+                            <div class="relative hidden lg:flex items-center justify-center"
+                                data-swiper-parallax-y="-500">
+                                <div class="relative z-10 glass-card p-6 slide-image">
+                                    <img src="./pics/back.jpg" alt="Hero Visual"
+                                        class="rounded-2xl shadow-2xl w-full max-w-lg">
+                                    <div class="absolute -top-10 -right-10 glass-card p-6 animate-bounce">
+                                        <div class="flex items-center gap-4">
+                                            <div
+                                                class="w-12 h-12 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <div class="text-right">
+                                                <p class="text-xs text-slate-400 light:text-slate-500">معدل الإنجاز</p>
+                                                <p class="font-bold">100%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute inset-0 bg-primary-600/20 rounded-full blur-[100px] -z-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Mobile Apps -->
+                <div class="swiper-slide flex items-center relative">
+                    <!-- Background Parallax (Vertical) -->
+                    <!-- <div class="absolute inset-0 z-0 scale-110" data-swiper-parallax-y="30%">
+                        <img src="./mobile_apps_hero_1777055388612.png" alt="Mobile Apps"
+                            class="w-full h-full object-cover opacity-30 dark:opacity-20 blur-[2px]">
+                    </div> -->
+
+                    <div class="container mx-auto px-6 relative z-10">
+                        <div class="grid xl:grid-cols-2 gap-16 items-center">
+                            <div class="text-right">
+                                <!-- Text Parallax (Horizontal) -->
+                                <div data-swiper-parallax-x="-300">
+                                    <span
+                                        class="slide-content inline-block px-4 py-2 bg-accent-cyan/10 border border-accent-cyan/20 rounded-full text-accent-cyan font-semibold text-sm mb-6">
+                                        تطبيقات الجوال الذكية
+                                    </span>
+                                </div>
+                                <div data-swiper-parallax-x="-500">
+                                    <h1 class="slide-content delay-1 text-5xl md:text-8xl font-bold leading-tight mb-8">
+                                        تطبيقات تلمس <br>
+                                        <span class="text-gradient">حياة عملائك</span>
+                                    </h1>
+                                </div>
+                                <div data-swiper-parallax-x="-700">
+                                    <p
+                                        class="slide-content delay-2 text-xl text-slate-400 light:text-slate-600 mb-10 max-w-xl leading-relaxed">
+                                        نصمم ونطور تطبيقات الهواتف الذكية التي تجمع بين جمال التصميم وقوة الأداء لتصل
+                                        لقلب جمهورك.
+                                    </p>
+                                </div>
+                                <div data-swiper-parallax-x="-900">
+                                    <div class="slide-content delay-3 flex flex-wrap gap-6 justify-start">
+                                        <a href="services.html" class="btn-primary">استكشف خدماتنا <i
+                                                class="fa-solid fa-rocket"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image Parallax (Vertical) -->
+                            <div class="relative hidden lg:flex items-center justify-center"
+                                data-swiper-parallax-y="-500">
+                                <div class="relative z-10 glass-card p-6 slide-image">
+                                    <img src="./pics/app.png" alt="Hero Visual"
+                                        class="rounded-2xl shadow-2xl w-full max-w-lg">
+                                    <div class="absolute -top-10 -right-10 glass-card p-6 animate-bounce">
+                                        <div class="flex items-center gap-4">
+                                            <div
+                                                class="w-12 h-12 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <div class="text-right">
+                                                <p class="text-xs text-slate-400 light:text-slate-500">معدل الإنجاز</p>
+                                                <p class="font-bold">100%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute inset-0 bg-primary-600/20 rounded-full blur-[100px] -z-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation Controls -->
+            <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-50 flex items-center gap-8">
+                <!-- <div class="hero-prev cursor-pointer w-14 h-14 glass-card flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all group">
+                    <i class="fa-solid fa-arrow-right group-hover:-translate-x-1 transition-transform"></i>
+                </div> -->
+                <div class="hero-pagination flex gap-3"></div>
+                <!-- <div class="hero-next cursor-pointer w-14 h-14 glass-card flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all group">
+                    <i class="fa-solid fa-arrow-left group-hover:translate-x-1 transition-transform"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 relative overflow-hidden bg-dark-bg/30 light:bg-slate-50/50">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <!-- Content -->
+                <div data-aos="fade-left">
+                    <h2 class="text-primary-400 font-bold tracking-[0.2em] uppercase mb-4">من نحن</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-8">شريكك <span class="text-gradient">التقني</span> في
+                        رحلة التحول الرقمي</h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-10">
+                        مكة للتقنية هي مؤسسة سعودية رائدة في مجال حلول البرمجيات والتحول الرقمي. نحن لا نقوم فقط بكتابة
+                        الكود، بل نصمم حلولاً إبداعية تساعد عملائنا على النمو والتميز في الفضاء الرقمي.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mb-10">
+                        <div class="glass-card p-6">
+                            <h4 class="text-3xl font-bold text-primary-500 mb-2">+100</h4>
+                            <p class="text-slate-400 light:text-slate-500">مشروع مكتمل</p>
+                        </div>
+                        <div class="glass-card p-6">
+                            <h4 class="text-3xl font-bold text-accent-cyan mb-2">+50</h4>
+                            <p class="text-slate-400 light:text-slate-500">عميل سعيد</p>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn-primary inline-flex">اكتشف قصتنا الكاملة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <!-- Visuals -->
+                <div class="relative" data-aos="fade-right">
+                    <div class="relative z-10 glass-card p-4 overflow-hidden group">
+                        <img src="./pics/about.png" alt="About Makkah Tech"
+                            class="rounded-2xl w-full h-80 lg:h-[500px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-primary-500/10 group-hover:bg-primary-500/0 transition-all duration-700">
+                        </div>
+                    </div>
+                    <!-- Decor -->
+                    <div
+                        class="absolute -top-10 -left-10 w-40 h-40 bg-primary-500/20 rounded-full blur-3xl -z-10 animate-pulse-slow">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -right-10 w-40 h-40 bg-accent-cyan/20 rounded-full blur-3xl -z-10 animate-pulse-slow">
+                    </div>
+
+                    <!-- Floating Achievement -->
+                    <div class="absolute top-1/2 -right-10 glass-card p-6 z-20 animate-float">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-accent-neon/20 text-accent-neon rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold">جودة عالمية</p>
+                                <p class="text-[10px] text-slate-400 light:text-slate-500">بمعايير احترافية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 relative overflow-hidden bg-dark-bg light:bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] uppercase mb-4">خدماتنا</h2>
+                <h3 class="text-4xl md:text-5xl font-bold">نقدم حلولاً <span class="text-gradient">ذكية</span> لعملك
+                </h3>
+            </div>
+
+            <div class="swiper services-swiper">
+                <div class="swiper-wrapper mb-14">
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 group relative overflow-hidden h-full group-hover:bg-slate-900/40 transition-colors duration-500">
+                            <a href="service-details.html" class="absolute inset-0 z-10"></a>
+
+                            <div
+                                class="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 blur-3xl rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-primary-600/20 text-primary-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4">تطبيقات الجوال</h4>
+                            <p class="text-slate-400 light:text-slate-600 leading-relaxed mb-8">
+                                تصميم وبرمجة تطبيقات iOS و Android بأحدث التقنيات لضمان أداء عالي وتجربة مستخدم لا تنسى.
+                            </p>
+                            <div class="flex items-center gap-2 text-primary-500 font-bold group-hover:gap-4 transition-all">
+                                استكشف المزيد <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 group relative overflow-hidden h-full group-hover:bg-slate-900/40 transition-colors duration-500">
+
+                            <div
+                                class="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 blur-3xl rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-primary-600/20 text-primary-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4">تطوير المواقع</h4>
+                            <p class="text-slate-400 light:text-slate-600 leading-relaxed mb-8">
+                                بناء مواقع إلكترونية عصرية سريعة، متوافقة مع محركات البحث، وتلبي كافة احتياجاتك
+                                التجارية.
+                            </p>
+                            <div class="flex items-center gap-2 text-primary-500 font-bold group-hover:gap-4 transition-all">
+                                استكشف المزيد <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 group relative overflow-hidden h-full group-hover:bg-slate-900/40 transition-colors duration-500">
+
+                            <div
+                                class="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 blur-3xl rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-primary-600/20 text-primary-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4">الاستضافة والسيرفرات</h4>
+                            <p class="text-slate-400 light:text-slate-600 leading-relaxed mb-8">
+                                حلول استضافة آمنة وسريعة مع دعم فني متواصل لضمان بقاء موقعك متصلاً بالعالم 24/7.
+                            </p>
+                            <div class="flex items-center gap-2 text-primary-500 font-bold group-hover:gap-4 transition-all">
+                                استكشف المزيد <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="shimmer-card glass-card bg-pri p-10 group relative overflow-hidden h-full">
+
+                            <div
+                                class="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 blur-3xl rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-primary-600/20 text-primary-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4">التسويق الرقمي</h4>
+                            <p class="text-slate-400 light:text-slate-600 leading-relaxed mb-8">
+                                استراتيجيات تسويقية مبتكرة لزيادة الوعي بعلامتك التجارية والوصول لجمهورك المستهدف بدقة.
+                            </p>
+                            <div class="flex items-center gap-2 text-primary-500 font-bold group-hover:gap-4 transition-all">
+                                استكشف المزيد <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination !-bottom-2 mt-12"></div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="services.html" class="btn-outline inline-flex">عرض كافة الخدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-24 bg-slate-900/30 light:bg-slate-100/50">
+        <div class="container mx-auto px-6">
+            <div class=" text-center mb-16 gap-8">
+                <div>
+                    <h2 class="text-primary-400 font-bold tracking-[0.2em] uppercase mb-4">أعمالنا</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold">باقة من آخر <span class="text-gradient">إبداعاتنا</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative h-[500px] [perspective:1000px] overflow-hidden rounded-[2.5rem]">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+
+                        <!-- Image Container -->
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-1.jpg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Default State (Simple Title) -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-8 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">تصميم
+                                موقع</span>
+                            <h4 class="text-2xl font-bold text-white">منصة أعلاف الإلكترونية</h4>
+                        </div>
+
+                        <!-- Hover State (Creative Glass Card) -->
+                        <div
+                            class="absolute inset-0 p-6 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10  border border-white/20 p-6 rounded-[2rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg shadow-lg shadow-primary-500/30">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">منصة أعلاف</h4>
+                                </div>
+                                <p class="text-slate-300 text-xs leading-relaxed mb-6">
+                                    منصة متكاملة لتجارة الأعلاف والمستلزمات الزراعية مع نظام إدارة ذكي.
+                                </p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-3 px-5 bg-white/10 rounded-xl border border-white/10 hover:bg-primary-500 hover:border-primary-500 transition-all duration-300">
+                                    <span class="text-xs font-bold text-white">استكشف المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left text-xs group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative h-[500px] [perspective:1000px] overflow-hidden rounded-[2.5rem]">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-2.jpeg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-8 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">تطبيق
+                                جوال</span>
+                            <h4 class="text-2xl font-bold text-white">تطبيق عابر للمواصلات</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-6 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10  border border-white/20 p-6 rounded-[2rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg shadow-lg shadow-primary-500/30">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">تطبيق عابر</h4>
+                                </div>
+                                <p class="text-slate-300 text-xs leading-relaxed mb-6">
+                                    حل ذكي لإدارة خدمات النقل والمواصلات في المملكة مع تتبع مباشر.
+                                </p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-3 px-5 bg-white/10 rounded-xl border border-white/10 hover:bg-primary-500 hover:border-primary-500 transition-all duration-300">
+                                    <span class="text-xs font-bold text-white">استكشف المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left text-xs group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative h-[500px] [perspective:1000px] overflow-hidden rounded-[2.5rem]">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-3.jpeg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-8 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">متجر
+                                إلكتروني</span>
+                            <h4 class="text-2xl font-bold text-white">متجر مظهر الجمال</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-6 flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10  border border-white/20 p-6 rounded-[2rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg shadow-lg shadow-primary-500/30">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">متجر مظهر</h4>
+                                </div>
+                                <p class="text-slate-300 text-xs leading-relaxed mb-6">
+                                    تجربة تسوق فريدة لمنتجات العناية والجمال مع واجهة عصرية.
+                                </p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-3 px-5 bg-white/10 rounded-xl border border-white/10 hover:bg-primary-500 hover:border-primary-500 transition-all duration-300">
+                                    <span class="text-xs font-bold text-white">استكشف المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left text-xs group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group relative h-[500px] [perspective:1000px] overflow-hidden rounded-[2.5rem]">
+                    <div
+                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
+                        <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden">
+                            <img src="./pics/ex-1.jpg" alt="Project"
+                                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[4px] group-hover:brightness-[0.4]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-8 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-10">
+                            <span class="text-primary-400 text-sm font-bold mb-2 block uppercase tracking-wider">برمجيات
+                                خاصة</span>
+                            <h4 class="text-2xl font-bold text-white">نظام أصول لإدارة الموارد</h4>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 p-6  flex flex-col justify-end [transform:translateZ(60px)] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <div
+                                class="bg-white/10  border border-white/20 p-6 rounded-[2rem] shadow-2xl translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg shadow-lg shadow-primary-500/30">
+                                        <i class="fa-solid fa-laptop-code"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">نظام أصول</h4>
+                                </div>
+                                <p class="text-slate-300 text-xs leading-relaxed mb-6">
+                                    نظام سحابي متطور لإدارة الموارد والمؤسسات بكفاءة عالية.
+                                </p>
+                                <a href="project_page.html"
+                                    class="flex items-center justify-between group/btn py-3 px-5 bg-white/10 rounded-xl border border-white/10 hover:bg-primary-500 hover:border-primary-500 transition-all duration-300">
+                                    <span class="text-xs font-bold text-white">استكشف المشروع</span>
+                                    <i
+                                        class="fa-solid fa-arrow-left text-xs group-hover/btn:-translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="our_projects.html" class="btn-primary inline-flex">شاهد المزيد من المشاريع</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4">قالوا عنا</h2>
+                <h3 class="text-4xl md:text-5xl font-bold">شركاء <span class="text-gradient">النجاح</span></h3>
+            </div>
+
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper mb-14">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 h-full flex flex-col items-center text-center group relative overflow-hidden group-hover:bg-slate-900/40 transition-colors duration-500">
+                            <div class="w-20 h-20 rounded-full border-4 border-primary-500/20 mb-6 overflow-hidden">
+                                <img src="./pics/user.png" alt="User" class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-lg italic text-slate-300 light:text-slate-600 mb-8 leading-relaxed">
+                                "شكراً أصول تك على التعامل الراقي والتعاون والتفاني في العمل، كانت تجربة رائعة معكم ولو
+                                أردت تنفيذ تطبيق آخر سوف أنفذ معكم مرة أخرى."
+                            </p>
+                            <h5 class="text-xl font-bold">عبد الرحمن الحارثي</h5>
+                            <span class="text-primary-400">المدير العام لمنصة سناب فستان</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 h-full flex flex-col items-center text-center group relative overflow-hidden group-hover:bg-slate-900/40 transition-colors duration-500">
+                            <div class="w-20 h-20 rounded-full border-4 border-primary-500/20 mb-6 overflow-hidden">
+                                <img src="./pics/user.png" alt="User" class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-lg italic text-slate-300 light:text-slate-600 mb-8 leading-relaxed">
+                                "خدمة ممتازة وفريق عمل محترف جداً، حققت بكم أهدافي وبعلمكم ومهارتكم حققنا جل أهدافنا
+                                بتأسيس مشروع منصة أعلاف."
+                            </p>
+                            <h5 class="text-xl font-bold">شركة ماش</h5>
+                            <span class="text-primary-400">مدير عام المشاريع</span>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 h-full flex flex-col items-center text-center group relative overflow-hidden group-hover:bg-slate-900/40 transition-colors duration-500">
+
+                            <div class="w-20 h-20 rounded-full border-4 border-primary-500/20 mb-6 overflow-hidden">
+                                <img src="./pics/user.png" alt="User" class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-lg italic text-slate-300 light:text-slate-600 mb-8 leading-relaxed">
+                                "ممتن جداً للعمل معكم، سرعة في التنفيذ ودقة في المواعيد، التطبيق يعمل بكفاءة عالية جداً
+                                وتجربة المستخدم مبهرة."
+                            </p>
+                            <h5 class="text-xl font-bold">م/ فهد الرشيدي</h5>
+                            <span class="text-primary-400">مؤسس متجر مظهر الجمال</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 h-full flex flex-col items-center text-center group relative overflow-hidden group-hover:bg-slate-900/40 transition-colors duration-500">
+                            <div class="w-20 h-20 rounded-full border-4 border-primary-500/20 mb-6 overflow-hidden">
+                                <img src="./pics/user.png" alt="User" class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-lg italic text-slate-300 light:text-slate-600 mb-8 leading-relaxed">
+                                "ممتن جداً للعمل معكم، سرعة في التنفيذ ودقة في المواعيد، التطبيق يعمل بكفاءة عالية جداً
+                                وتجربة المستخدم مبهرة."
+                            </p>
+                            <h5 class="text-xl font-bold">م/ فهد الرشيدي</h5>
+                            <span class="text-primary-400">مؤسس متجر مظهر الجمال</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="shimmer-card glass-card p-10 h-full flex flex-col items-center text-center group relative overflow-hidden group-hover:bg-slate-900/40 transition-colors duration-500">
+
+                            <div class="w-20 h-20 rounded-full border-4 border-primary-500/20 mb-6 overflow-hidden">
+                                <img src="./pics/user.png" alt="User" class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-lg italic text-slate-300 light:text-slate-600 mb-8 leading-relaxed">
+                                "ممتن جداً للعمل معكم، سرعة في التنفيذ ودقة في المواعيد، التطبيق يعمل بكفاءة عالية جداً
+                                وتجربة المستخدم مبهرة."
+                            </p>
+                            <h5 class="text-xl font-bold">م/ فهد الرشيدي</h5>
+                            <span class="text-primary-400">مؤسس متجر مظهر الجمال</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Technologies Section -->
+    <section class="py-24 relative overflow-hidden bg-dark-bg/50 light:bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase">تقنياتنا</h2>
+                <h3 class="text-4xl md:text-5xl font-bold">نستخدم أفضل <span class="text-gradient">التقنيات</span>
+                    لتطوير أعمالك</h3>
+            </div>
+
+            <div class="swiper tech-swiper">
+                <div class="swiper-wrapper items-center mb-14">
+                    <!-- Tech 1: React -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 relative overflow-hidden group-hover:bg-slate-900/40 light:group-hover:bg-slate-50">
+                            <i
+                                class="fa-brands fa-react text-6xl text-[#61DAFB] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">React.js</span>
+                        </div>
+                    </div>
+                    <!-- Tech 2: Laravel -->
+                    <div class="swiper-slide">
+                        <div
+                            class="glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500">
+                            <i
+                                class="fa-brands fa-laravel text-6xl text-[#FF2D20] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Laravel</span>
+                        </div>
+                    </div>
+                    <!-- Tech 3: WordPress -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500">
+                            <i
+                                class="fa-brands fa-wordpress text-6xl text-[#21759B] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">WordPress</span>
+                        </div>
+                    </div>
+                    <!-- Tech 4: Node.js -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500">
+                            <i
+                                class="fa-brands fa-node-js text-6xl text-[#339933] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Node.js</span>
+                        </div>
+                    </div>
+                    <!-- Tech 5: Flutter -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500">
+                            <i
+                                class="fa-solid fa-mobile-screen-button text-6xl text-[#02569B] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Flutter</span>
+                        </div>
+                    </div>
+                    <!-- Tech 6: Python -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500">
+                            <i
+                                class="fa-brands fa-python text-6xl text-[#3776AB] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Python</span>
+                        </div>
+                    </div>
+                    <!-- Tech 7: Vue.js -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500">
+                            <i
+                                class="fa-brands fa-vuejs text-6xl text-[#4FC08D] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Vue.js</span>
+                        </div>
+                    </div>
+                    <!-- Tech 8: Tailwind -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 group-hover:bg-slate-900/40 light:group-hover:bg-slate-50 relative overflow-hidden">
+                            <i
+                                class="fa-solid fa-wind text-6xl text-[#06B6D4] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <!-- Tech 9: AWS -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 group-hover:bg-slate-900/40 relative overflow-hidden">
+                            <i
+                                class="fa-brands fa-aws text-6xl text-[#FF9900] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">AWS</span>
+                        </div>
+                    </div>
+                    <!-- Tech 10: Docker -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 group-hover:bg-slate-900/40 relative overflow-hidden">
+                            <i
+                                class="fa-brands fa-docker text-6xl text-[#2496ED] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Docker</span>
+                        </div>
+                    </div>
+                    <!-- Tech 11: PostgreSQL -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 group-hover:bg-slate-900/40 relative overflow-hidden">
+                            <i
+                                class="fa-solid fa-database text-6xl text-[#336791] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <!-- Tech 12: Swift -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 group-hover:bg-slate-900/40 relative overflow-hidden">
+                            <i
+                                class="fa-brands fa-swift text-6xl text-[#F05138] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Swift (iOS)</span>
+                        </div>
+                    </div>
+                    <!-- Tech 13: Figma -->
+                    <div class="swiper-slide">
+                        <div
+                            class="shimmer-card glass-card p-8 flex flex-col items-center justify-center group hover:border-primary-500/50 transition-all duration-500 group-hover:bg-slate-900/40 relative overflow-hidden">
+                            <i
+                                class="fa-brands fa-figma text-6xl text-[#F24E1E] mb-4 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-lg font-bold">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Project CTA -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="relative rounded-[3rem] overflow-hidden p-12 md:p-20 text-center">
+                <!-- Animated Background for CTA -->
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-600 to-indigo-900 -z-10"></div>
+                <div
+                    class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-[120px] -mr-48 -mt-48 animate-pulse-slow">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-96 h-96 bg-primary-400/20 rounded-full blur-[120px] -ml-48 -mb-48 animate-pulse-slow delay-700">
+                </div>
+
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">جاهز لبدء رحلتك <span
+                            class="text-primary-200">الرقمية</span> معنا؟</h2>
+                    <p class="text-white/80 text-xl mb-12 leading-relaxed">
+                        نحن هنا لنحول رؤيتك إلى واقع ملموس. ابدأ مشروعك اليوم مع فريق من الخبراء والمبدعين.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="contact.html"
+                            class="px-10 py-5 bg-white text-primary-600 rounded-2xl font-bold text-lg hover:bg-primary-50 hover:scale-105 transition-all shadow-2xl shadow-white/20">
+                            ابدأ مشروعك الآن
+                        </a>
+                        <a href="tel:+9665XXXXXXXX"
+                            class="px-10 py-5 bg-white/10 text-white border border-white/20 rounded-2xl font-bold text-lg hover:bg-white/20 transition-all backdrop-blur-md">
+                            تحدث مع مستشار تقني
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners Section -->
+    <section class="py-16 border-y border-white/5 light:border-slate-200 bg-white/[0.02] light:bg-slate-50/50">
+        <div class="container mx-auto px-6">
+            <div class="swiper logos-swiper">
+                <div class="swiper-wrapper items-center">
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-1.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-2.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-3.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-4.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-5.svg" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-6.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-2.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-3.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                    <div class="swiper-slide opacity-50 hover:opacity-100 transition-opacity"><img
+                            src="./pics/logo-4.png" alt="Logo" class="max-h-12 mx-auto grayscale hover:grayscale-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
