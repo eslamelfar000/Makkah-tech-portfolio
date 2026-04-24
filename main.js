@@ -21,13 +21,24 @@ function initNavbarEvents() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') body.classList.add('light');
 
-    // Handle Active Link
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-link');
+    // Handle Active Link (Optimized for Clean URLs)
+    const currentPath = window.location.pathname.replace(/\/$/, "");
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-link');
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPath || (currentPath === 'service-details.html' && href === 'services.html')) {
-            link.classList.add('text-primary-500');
+        if (!href) return;
+
+        const cleanCurrentPage = currentPage.replace('.html', '');
+        const cleanHref = href.replace('.html', '');
+
+        const isExactMatch = cleanCurrentPage === cleanHref;
+        const isIndexMatch = (cleanCurrentPage === 'index' || cleanCurrentPage === '') && cleanHref === 'index';
+        const isServiceParent = (cleanCurrentPage === 'service-details' && cleanHref === 'services');
+
+        if (isExactMatch || isIndexMatch || isServiceParent) {
+            link.classList.add('text-primary-500', 'font-bold');
         }
     });
 
