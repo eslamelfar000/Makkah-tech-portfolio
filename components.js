@@ -20,6 +20,7 @@ async function loadComponent(placeholderId, filePath) {
 async function initSharedComponents() {
     // Load components in parallel
     await Promise.all([
+        loadComponent('preloader-placeholder', 'components/loader.html'),
         loadComponent('cursor-placeholder', 'components/cursor.html'),
         loadComponent('top-nav-placeholder', 'components/top-nav.html'),
         loadComponent('main-nav-placeholder', 'components/navbar.html'),

@@ -1,7 +1,37 @@
-/**
- * Makkah Tech - Main Shared JavaScript
- * Centralized logic for Smooth Scrolling, Theme Toggle, Custom Cursor, and Navigation.
- */
+// 0. Preloader Logic
+function initPreloader() {
+    const preloader = document.getElementById('preloader');
+    const progressBar = document.querySelector('.loader-progress');
+    const percentText = document.querySelector('.loader-percentage');
+    
+    if (!preloader) return;
+
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += Math.random() * 15;
+        if (progress > 100) progress = 100;
+        
+        if (progressBar) progressBar.style.width = `${progress}%`;
+        if (percentText) percentText.innerText = Math.floor(progress);
+
+        if (progress >= 100) {
+            clearInterval(interval);
+            setTimeout(() => {
+                preloader.classList.add('loaded');
+                document.body.style.overflow = 'auto';
+                
+                // Initialize animations only after loader is gone
+                initPageAnimations();
+                initSwipers();
+            }, 500);
+        }
+    }, 100);
+
+    // Backup: ensures it hides even if something fails
+    window.addEventListener('load', () => {
+        progress = 100;
+    });
+}
 
 // 1. Smooth Scrolling (Lenis)
 const lenis = new Lenis();
@@ -109,8 +139,12 @@ function initNavbarEvents() {
     }
 }
 
+// Block scroll while loading (Immediate)
+document.body.style.overflow = 'hidden';
+
 // Listen for components loaded event
 document.addEventListener('componentsLoaded', () => {
+    initPreloader();
     initNavbarEvents();
     initCursor();
 });
@@ -151,28 +185,33 @@ function initCursor() {
     });
 }
 
-// 6. GSAP Reveals (Data-AOS fade-up alternative)
-gsap.registerPlugin(ScrollTrigger);
-document.querySelectorAll('[data-aos="fade-up"]').forEach(el => {
-    const delay = el.getAttribute('data-aos-delay') ? parseInt(el.getAttribute('data-aos-delay')) / 1000 : 0.3;
-    const duration = el.getAttribute('data-aos-duration') ? parseInt(el.getAttribute('data-aos-duration')) / 1000 : 0.3;
+// 6. GSAP Reveals
+function initPageAnimations() {
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('[data-aos="fade-up"]').forEach(el => {
+        const delay = el.getAttribute('data-aos-delay') ? parseInt(el.getAttribute('data-aos-delay')) / 1000 : 0.3;
+        const duration = el.getAttribute('data-aos-duration') ? parseInt(el.getAttribute('data-aos-duration')) / 1000 : 0.3;
 
-    gsap.from(el, {
-        scrollTrigger: {
-            trigger: el,
-            start: 'top 90%'
-        },
-        y: 50,
-        opacity: 0,
-        duration: duration,
-        delay: delay,
-        ease: 'power3.out'
+        gsap.from(el, {
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 90%'
+            },
+            y: 50,
+            opacity: 0,
+            duration: duration,
+            delay: delay,
+            ease: 'power3.out'
+        });
     });
-});
 
-// 7. Swiper Initializations (Only if elements exist)
+    // Initialize Stats Counter
+    initStatsCounter();
+}
 
-// Hero Swiper
+// 7. Swiper Initializations
+function initSwipers() {
+    // Hero Swiper
 if (document.querySelector('.heroSwiper')) {
     new Swiper('.heroSwiper', {
         loop: true,
@@ -250,9 +289,11 @@ if (document.querySelector('.logos-swiper')) {
         breakpoints: { 480: { slidesPerView: 3 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 6 } }
     });
 }
+}
 
-// 8. Stats Counter-up Animation (Common for About/Home)
-const stats = document.querySelectorAll('.stat-number');
+// 8. Stats Counter-up Animation
+function initStatsCounter() {
+    const stats = document.querySelectorAll('.stat-number');
 if (stats.length > 0) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -279,6 +320,7 @@ if (stats.length > 0) {
     }, { threshold: 1.0 });
 
     stats.forEach(stat => observer.observe(stat));
+}
 }
 
 // 9. FAQ Accordion Logic

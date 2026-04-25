@@ -88,7 +88,93 @@
   transform: scale(1);
 }
 
-/* ── 4. Shimmer Card Effect (used on service, project & tech cards) ── */
+/* ── 5. Preloader Styles ── */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #020617; /* Slate 950 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+}
+
+.light #preloader {
+  background: #f8fafc; /* Slate 50 */
+}
+
+#preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-container {
+  text-align: center;
+  position: relative;
+}
+
+.loader-logo {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.light .loader-logo {
+  color: #0f172a;
+}
+
+.loader-logo span {
+  background: linear-gradient(135deg, #2550ff, #00d2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loader-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(37, 80, 255, 0.1);
+  border-top-color: #2550ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, #2550ff, #00d2ff);
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.loader-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  font-weight: 900;
+  color: rgba(37, 81, 255, 0.178);
+  pointer-events: none;
+  z-index: 1;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+/* ── 6. Shimmer Card Effect ── */
 .shimmer-card {
   position: relative;
   overflow: hidden;
