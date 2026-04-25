@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Libraries -->
@@ -35,173 +35,203 @@
     <div id="main-nav-placeholder"></div>
     <div id="mobile-menu-placeholder"></div>
 
-    <!-- Header Section Improved -->
-    <section class="pt-48 pb-20 relative overflow-hidden transition-colors duration-500">
+    <!-- Header Section -->
+    <section class="pt-48 pb-24 relative overflow-hidden transition-colors duration-500">
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-500/20 blur-[120px] rounded-full animate-pulse"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-cyan/10 blur-[120px] rounded-full"></div>
+        </div>
+
         <div class="container mx-auto px-6 relative z-10 text-center">
             <!-- Integrated Breadcrumbs -->
-            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12"
-                data-aos="fade-down">
+            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12" data-aos="fade-down">
                 <a href="index.html" class="hover:text-primary-500 transition-colors">الرئيسية</a>
                 <i class="fa-solid fa-angle-left text-[10px]"></i>
                 <span class="text-primary-500 font-medium">المواقع التعريفية</span>
             </nav>
 
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 text-white dark:text-white light:text-slate-900 leading-tight"
-                data-aos="fade-up">مواقع <span class="text-gradient">تعريفية</span> تبرز هويتك</h1>
-            <p class="text-xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic"
-                data-aos="fade-up">
-                عزز تواجدك الرقمي بموقع تعريفي احترافي يعكس قيم شركتك ويجذب عملاءك المحتملين.
+            <div class="inline-block px-4 py-1.5 rounded-full border border-primary-500/30 bg-primary-500/5 text-primary-400 text-sm font-bold mb-8" data-aos="fade-up">
+                واجهتك الرقمية الاحترافية
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-bold mb-8 text-white dark:text-white light:text-slate-900 tracking-tight leading-tight" data-aos="fade-up" data-aos-delay="50">
+                مواقع <span class="text-gradient">تعريفية</span> تبرز هويتك
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic" data-aos="fade-up" data-aos-delay="100">
+                عزز تواجدك الرقمي بموقع تعريفي احترافي يعكس قيم شركتك ويجذب عملاءك المحتملين بلمسة إبداعية فريدة.
             </p>
         </div>
     </section>
 
-    <!-- Content Section -->
-    <section class="py-24 bg-dark-bg transition-colors duration-500">
+    <!-- Why Section -->
+    <section class="py-24 bg-dark-bg light:bg-white transition-colors duration-500">
         <div class="container mx-auto px-6 text-right">
             <div class="grid lg:grid-cols-2 gap-20 items-center mb-32">
-                <div data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-8 text-white dark:text-white light:text-slate-900">لماذا يحتاج عملك
-                        لموقع تعريفي؟</h2>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 bg-primary-600/20 text-primary-500 rounded-xl flex items-center justify-center shrink-0">
+                <div data-aos="fade-left">
+                    <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase text-sm">لماذا تحتاج لموقع؟</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-8 text-white dark:text-white light:text-slate-900 leading-tight">الموقع الإلكتروني هو <span class="text-primary-500">قلب هويتك</span> الرقمية</h3>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group">
+                            <div class="w-14 h-14 shrink-0 bg-primary-600/20 text-primary-500 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary-500 group-hover:text-white transition-all duration-500">
                                 <i class="fa-solid fa-briefcase"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-2">احترافية
-                                    ومصداقية</h4>
-                                <p class="text-slate-400 text-sm">الموقع الإلكتروني هو واجهة عملك الرسمية التي تعطي
-                                    انطباعاً بالثقة.</p>
+                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">احترافية ومصداقية</h4>
+                                <p class="text-slate-400 light:text-slate-600 leading-relaxed">الموقع الإلكتروني هو واجهة عملك الرسمية التي تعطي انطباعاً فورياً بالثقة والجدية أمام عملائك.</p>
                             </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 bg-accent-cyan/20 text-accent-cyan rounded-xl flex items-center justify-center shrink-0">
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div class="w-14 h-14 shrink-0 bg-accent-cyan/20 text-accent-cyan rounded-2xl flex items-center justify-center text-2xl group-hover:bg-accent-cyan group-hover:text-white transition-all duration-500">
                                 <i class="fa-solid fa-users"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-2">الوصول لجمهور
-                                    أكبر</h4>
-                                <p class="text-slate-400 text-sm">تصل لعملائك في أي مكان وفي أي وقت دون قيود جغرافية.
-                                </p>
+                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">الوصول لجمهور أكبر</h4>
+                                <p class="text-slate-400 light:text-slate-600 leading-relaxed">تصل لعملائك في أي مكان وفي أي وقت دون قيود جغرافية، مما يفتح آفاقاً جديدة لنمو أعمالك.</p>
                             </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 bg-green-500/20 text-green-500 rounded-xl flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-2">أداة تسويقية
-                                    قوية</h4>
-                                <p class="text-slate-400 text-sm">يمكنك استخدامه كمركز لكافة حملاتك الإعلانية الرقمية.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
-                <div data-aos="fade-up">
-                    <div class="glass-card p-4">
+                <div class="relative" data-aos="fade-right">
+                    <div class="glass-card p-4 relative z-10">
                         <img src="./pics/portfolio.png" alt="Portfolio" class="rounded-2xl w-full shadow-2xl">
                     </div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-500/20 blur-[60px] rounded-full"></div>
                 </div>
             </div>
 
-            <!-- Pricing -->
+            <!-- Pricing Table -->
             <div class="grid lg:grid-cols-3 gap-10">
                 <!-- Basic -->
-                <div class="pricing-card" data-aos="fade-up">
+                <div class="pricing-card group" data-aos="fade-up">
                     <div class="mb-8 text-center">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">موقع تعريفي
-                            بسيط</h3>
-                        <p class="text-slate-500">للأفراد والمهنيين</p>
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">موقع تعريفي بسيط</h3>
+                        <p class="text-slate-500 light:text-slate-500">للأفراد والمهنيين والمشاريع الصغيرة</p>
                     </div>
                     <div class="mb-10 text-center">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$150</span>
                         <p class="text-slate-500 mt-2">دفعة واحدة</p>
                     </div>
-                    <ul class="space-y-4 mb-10 flex-grow">
+                    <ul class="space-y-6 mb-12 flex-grow text-right">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>صفحة واحدة (Landing Page)</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>صفحة واحدة احترافية (Landing Page)</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>متوافق مع الجوال</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>متوافق مع كافة أحجام الشاشات</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>نموذج تواصل سريع</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>نموذج تواصل سريع مربوط بالبريد</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-white/5 border border-white/10 dark:bg-white/5 dark:border-white/10 light:bg-slate-100 light:border-slate-200 font-bold hover:bg-white/10 light:hover:bg-slate-200 transition-all text-center">ابدأ
-                        الآن</a>
+                    <a href="contact.html" class="btn-outline w-full text-center py-4 rounded-2xl font-bold transition-all">ابدأ الآن</a>
                 </div>
 
                 <!-- Professional -->
-                <div class="pricing-card border-primary-500/50 bg-primary-500/5 dark:bg-primary-500/5 light:bg-primary-50/50"
-                    data-aos="fade-up">
-                    <div
-                        class="absolute top-0 right-0 bg-primary-600 text-white px-6 py-2 rounded-bl-3xl font-bold text-sm">
-                        الأكثر طلباً</div>
+                <div class="pricing-card popular group scale-105 border-primary-500/50" data-aos="fade-up">
+                    <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-600 text-white px-6 py-1.5 rounded-full font-bold text-xs shadow-xl shadow-primary-500/20 uppercase tracking-wider">
+                        الأكثر طلباً
+                    </div>
                     <div class="mb-8 text-center">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">موقع شركات
-                            احترافي</h3>
-                        <p class="text-slate-500">للمؤسسات والشركات</p>
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">موقع شركات احترافي</h3>
+                        <p class="text-slate-500 light:text-slate-500">للمؤسسات والشركات المتوسطة</p>
                     </div>
                     <div class="mb-10 text-center">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$350</span>
                         <p class="text-slate-500 mt-2">دفعة واحدة</p>
                     </div>
-                    <ul class="space-y-4 mb-10 flex-grow">
+                    <ul class="space-y-6 mb-12 flex-grow text-right">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>متعدد الصفحات (حتى 10 صفحات)</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>لوحة تحكم لإدارة المحتوى</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>لوحة تحكم سهلة لإدارة المحتوى</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>تحسين لمحركات البحث (SEO)</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>تحسين لمحركات البحث (SEO Basic)</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-primary-600 text-white font-bold hover:bg-primary-500 transition-all text-center">ابدأ
-                        الآن</a>
+                    <a href="contact.html" class="btn-primary w-full text-center py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary-500/20">ابدأ الآن</a>
                 </div>
 
                 <!-- Premium -->
-                <div class="pricing-card" data-aos="fade-up">
+                <div class="pricing-card group" data-aos="fade-up">
                     <div class="mb-8 text-center">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">موقع بريميوم
-                        </h3>
-                        <p class="text-slate-500">حلول متكاملة</p>
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">موقع بريميوم</h3>
+                        <p class="text-slate-500 light:text-slate-500">حلول متكاملة للشركات الكبرى</p>
                     </div>
                     <div class="mb-10 text-center">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$600</span>
                         <p class="text-slate-500 mt-2">دفعة واحدة</p>
                     </div>
-                    <ul class="space-y-4 mb-10 flex-grow">
+                    <ul class="space-y-6 mb-12 flex-grow text-right">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>تصميم مخصص 100%</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>تصميم مخصص 100% غير مكرر</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>متعدد اللغات (عربي/إنجليزي)</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>متعدد اللغات (عربي / إنجليزي)</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>دعم فني لمدة سنة مجاناً</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>دعم فني وتحديثات لمدة سنة مجاناً</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-white/5 border border-white/10 dark:bg-white/5 dark:border-white/10 light:bg-slate-100 light:border-slate-200 font-bold hover:bg-white/10 light:hover:bg-slate-200 transition-all text-center">تواصل
-                        معنا</a>
+                    <a href="contact.html" class="btn-outline w-full text-center py-4 rounded-2xl font-bold transition-all">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="py-24 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase">الأسئلة الشائعة</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-slate-900">أسئلة حول <span class="text-gradient">المواقع</span></h3>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="glass-card overflow-hidden group">
+                    <button class="faq-btn w-full px-8 py-6 flex items-center justify-between text-right gap-4">
+                        <span class="text-lg font-bold text-white dark:text-white light:text-slate-900">كم يستغرق بناء الموقع التعريفي؟</span>
+                        <i class="fa-solid fa-plus text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-8">
+                        <p class="pb-6 text-slate-400 light:text-slate-600">يستغرق بناء الموقع البسيط من 5-7 أيام عمل، بينما قد يستغرق الموقع الاحترافي المتعدد الصفحات من 14-21 يوم عمل حسب المتطلبات.</p>
+                    </div>
+                </div>
+                <div class="glass-card overflow-hidden group">
+                    <button class="faq-btn w-full px-8 py-6 flex items-center justify-between text-right gap-4">
+                        <span class="text-lg font-bold text-white dark:text-white light:text-slate-900">هل يمكنني تعديل محتوى الموقع بنفسي؟</span>
+                        <i class="fa-solid fa-plus text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-8">
+                        <p class="pb-6 text-slate-400 light:text-slate-600">نعم، نوفر لوحة تحكم سهلة الاستخدام تتيح لك تعديل النصوص، الصور، والخدمات في أي وقت دون الحاجة لخبرة برمجية.</p>
+                    </div>
                 </div>
             </div>
         </div>

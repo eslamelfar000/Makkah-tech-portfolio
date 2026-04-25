@@ -36,136 +36,219 @@
     <div id="mobile-menu-placeholder"></div>
 
     <!-- Header Section -->
-    <section class="pt-48 pb-20 relative overflow-hidden transition-colors duration-500">
+    <section class="pt-48 pb-24 relative overflow-hidden transition-colors duration-500">
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-500/20 blur-[120px] rounded-full animate-pulse"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-cyan/10 blur-[120px] rounded-full"></div>
+        </div>
+
         <div class="container mx-auto px-6 relative z-10 text-center">
             <!-- Integrated Breadcrumbs -->
-            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12"
-                data-aos="fade-down">
+            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12" data-aos="fade-down">
                 <a href="index.html" class="hover:text-primary-500 transition-colors">الرئيسية</a>
                 <i class="fa-solid fa-angle-left text-[10px]"></i>
                 <span class="text-primary-500 font-medium">خدمات الاستضافة</span>
             </nav>
-        </div>
-    </section>
 
-    <!-- Header Section Improved -->
-    <section class="pb-20 relative overflow-hidden">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight" data-aos="fade-up">استضافة <span
-                    class="text-gradient">سحابية</span> فائقة السرعة</h1>
-            <p class="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up">
-                حلول استضافة متميزة تضمن لموقعك الأداء الأقصى والحماية الكاملة مع دعم فني متواصل.
+            <div class="inline-block px-4 py-1.5 rounded-full border border-primary-500/30 bg-primary-500/5 text-primary-400 text-sm font-bold mb-8" data-aos="fade-up">
+                بنية تحتية عالمية
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-bold mb-8 text-white dark:text-white light:text-slate-900 tracking-tight" data-aos="fade-up" data-aos-delay="50">
+                استضافة <span class="text-gradient">سحابية</span> فائقة السرعة
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic" data-aos="fade-up" data-aos-delay="100">
+                حلول استضافة متميزة تضمن لموقعك الأداء الأقصى والحماية الكاملة مع دعم فني متواصل على مدار الساعة.
             </p>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section class="py-24">
+    <section class="py-24 bg-dark-bg light:bg-white transition-colors duration-500">
         <div class="container mx-auto px-6">
             <div class="grid lg:grid-cols-3 gap-10">
                 <!-- Basic Plan -->
-                <div class="pricing-card" data-aos="fade-up">
+                <div class="pricing-card group" data-aos="fade-up">
                     <div class="mb-8">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">الخطة
-                            الأساسية</h3>
-                        <p class="text-slate-500">مثالية للمواقع الصغيرة والناشئة</p>
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">الخطة الأساسية</h3>
+                        <p class="text-slate-500 light:text-slate-500">مثالية للمواقع الصغيرة والناشئة</p>
                     </div>
-                    <div class="mb-10">
+                    <div class="mb-10 flex items-baseline gap-2">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$25</span>
                         <span class="text-slate-500 text-lg">/ سنوياً</span>
                     </div>
                     <ul class="space-y-6 mb-12 flex-grow">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>مساحة تخزين 5 جيجابايت</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>باندويث غير محدود</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>بريد إلكتروني مخصص (5)</span>
                         </li>
-                        <li class="flex items-center gap-3 text-slate-500">
-                            <i class="fa-solid fa-xmark"></i>
+                        <li class="flex items-center gap-3 text-slate-500 opacity-50">
+                            <div class="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
                             <span>دعم فني مخصص 24/7</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-white/5 border border-white/10 dark:bg-white/5 dark:border-white/10 light:bg-slate-100 light:border-slate-200 font-bold hover:bg-white/10 light:hover:bg-slate-200 transition-all text-center">اطلب
-                        الآن</a>
+                    <a href="contact.html" class="btn-outline w-full text-center py-4 rounded-2xl font-bold transition-all">اطلب الآن</a>
                 </div>
 
                 <!-- Pro Plan -->
-                <div class="pricing-card popular" data-aos="fade-up">
-                    <div
-                        class="absolute top-0 right-0 bg-primary-600 text-white px-6 py-2 rounded-bl-3xl font-bold text-sm">
-                        الأكثر طلباً</div>
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">الخطة
-                            المتقدمة</h3>
-                        <p class="text-slate-500">للشركات والمؤسسات المتوسطة</p>
+                <div class="pricing-card popular group scale-105 border-primary-500/50" data-aos="fade-up">
+                    <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-600 text-white px-6 py-1.5 rounded-full font-bold text-xs shadow-xl shadow-primary-500/20 uppercase tracking-wider">
+                        الأكثر طلباً
                     </div>
-                    <div class="mb-10">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">الخطة المتقدمة</h3>
+                        <p class="text-slate-500 light:text-slate-500">للشركات والمؤسسات المتوسطة</p>
+                    </div>
+                    <div class="mb-10 flex items-baseline gap-2">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$65</span>
                         <span class="text-slate-500 text-lg">/ سنوياً</span>
                     </div>
                     <ul class="space-y-6 mb-12 flex-grow">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>مساحة تخزين 20 جيجابايت</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>باندويث غير محدود</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>بريد إلكتروني مخصص (20)</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>دعم فني مخصص 24/7</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-primary-600 text-white font-bold hover:bg-primary-500 transition-all shadow-lg shadow-primary-500/20 text-center">اطلب
-                        الآن</a>
+                    <a href="contact.html" class="btn-primary w-full text-center py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary-500/20">اطلب الآن</a>
                 </div>
 
                 <!-- Business Plan -->
-                <div class="pricing-card" data-aos="fade-up">
+                <div class="pricing-card group" data-aos="fade-up">
                     <div class="mb-8">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">خطة الأعمال
-                        </h3>
-                        <p class="text-slate-500">للمتاجر والمنصات الكبيرة</p>
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">خطة الأعمال</h3>
+                        <p class="text-slate-500 light:text-slate-500">للمتاجر والمنصات الكبيرة</p>
                     </div>
-                    <div class="mb-10">
+                    <div class="mb-10 flex items-baseline gap-2">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$120</span>
                         <span class="text-slate-500 text-lg">/ سنوياً</span>
                     </div>
                     <ul class="space-y-6 mb-12 flex-grow">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>مساحة تخزين غير محدودة</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>باندويث فائق السرعة</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>بريد إلكتروني غير محدود</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>نسخ احتياطي يومي</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-white/5 border border-white/10 dark:bg-white/5 dark:border-white/10 light:bg-slate-100 light:border-slate-200 font-bold hover:bg-white/10 light:hover:bg-slate-200 transition-all text-center">اطلب
-                        الآن</a>
+                    <a href="contact.html" class="btn-outline w-full text-center py-4 rounded-2xl font-bold transition-all">اطلب الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-slate-900/50 light:bg-slate-50 transition-colors duration-500">
+        <div class="container mx-auto px-6 text-right">
+            <div class="text-center mb-16">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase">لماذا تختارنا؟</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-slate-900">مميزات تجعلنا <span class="text-gradient">الأفضل</span></h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-10 group hover:-translate-y-2 transition-all duration-500" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-primary-500/10 text-primary-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-primary-500 group-hover:text-white transition-all duration-500">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white dark:text-white light:text-slate-900">أداء خارق</h4>
+                    <p class="text-slate-400 light:text-slate-600 leading-relaxed">نستخدم أقراص NVMe فائقة السرعة مع معالجات متطورة لضمان أقل وقت تحميل لموقعك.</p>
+                </div>
+                <div class="glass-card p-10 group hover:-translate-y-2 transition-all duration-500" data-aos="fade-up" data-aos-delay="50">
+                    <div class="w-16 h-16 bg-accent-cyan/10 text-accent-cyan rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent-cyan group-hover:text-white transition-all duration-500">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white dark:text-white light:text-slate-900">حماية متكاملة</h4>
+                    <p class="text-slate-400 light:text-slate-600 leading-relaxed">نظام حماية من هجمات DDoS مع جدار حماية متطور وتحديثات أمنية تلقائية على مدار الساعة.</p>
+                </div>
+                <div class="glass-card p-10 group hover:-translate-y-2 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-accent-gold/10 text-accent-gold rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent-gold group-hover:text-white transition-all duration-500">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white dark:text-white light:text-slate-900">دعم خبير</h4>
+                    <p class="text-slate-400 light:text-slate-600 leading-relaxed">فريق من الخبراء التقنيين جاهز لمساعدتك في أي وقت لحل كافة المشاكل التي قد تواجهك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="py-24 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase">الأسئلة الشائعة</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-slate-900">لديك استفسار؟ <span class="text-gradient">نحن هنا</span></h3>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="glass-card overflow-hidden group">
+                    <button class="faq-btn w-full px-8 py-6 flex items-center justify-between text-right gap-4">
+                        <span class="text-lg font-bold text-white dark:text-white light:text-slate-900">هل يمكنني ترقية خطتي في أي وقت؟</span>
+                        <i class="fa-solid fa-plus text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-8">
+                        <p class="pb-6 text-slate-400 light:text-slate-600">نعم، يمكنك الترقية إلى أي خطة أعلى في أي وقت من خلال لوحة التحكم الخاصة بك وبشكل تلقائي.</p>
+                    </div>
+                </div>
+                <div class="glass-card overflow-hidden group">
+                    <button class="faq-btn w-full px-8 py-6 flex items-center justify-between text-right gap-4">
+                        <span class="text-lg font-bold text-white dark:text-white light:text-slate-900">هل توفرون شهادات SSL مجانية؟</span>
+                        <i class="fa-solid fa-plus text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-8">
+                        <p class="pb-6 text-slate-400 light:text-slate-600">نعم، نوفر شهادات Let's Encrypt SSL مجانية لكافة المواقع المستضافة لدينا لضمان أمان بياناتك.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -154,8 +154,8 @@ function initCursor() {
 // 6. GSAP Reveals (Data-AOS fade-up alternative)
 gsap.registerPlugin(ScrollTrigger);
 document.querySelectorAll('[data-aos="fade-up"]').forEach(el => {
-    const delay = el.getAttribute('data-aos-delay') ? parseInt(el.getAttribute('data-aos-delay')) / 1000 : 0;
-    const duration = el.getAttribute('data-aos-duration') ? parseInt(el.getAttribute('data-aos-duration')) / 1000 : 1;
+    const delay = el.getAttribute('data-aos-delay') ? parseInt(el.getAttribute('data-aos-delay')) / 1000 : 0.3;
+    const duration = el.getAttribute('data-aos-duration') ? parseInt(el.getAttribute('data-aos-duration')) / 1000 : 0.3;
 
     gsap.from(el, {
         scrollTrigger: {

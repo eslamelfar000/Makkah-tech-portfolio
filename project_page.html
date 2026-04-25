@@ -35,7 +35,17 @@
     <div id="mobile-menu-placeholder"></div>
 
     <!-- Project Header -->
-    <section class="pt-48 pb-10 relative overflow-hidden transition-colors duration-500">
+    <section class="pt-48 pb-24 relative overflow-hidden transition-colors duration-500">
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0">
+            <div
+                class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-500/20 blur-[120px] rounded-full animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-cyan/10 blur-[120px] rounded-full">
+            </div>
+        </div>
+
         <div class="container mx-auto px-6 relative z-10 text-center md:text-right">
             <!-- Integrated Breadcrumbs -->
             <nav class="flex items-center justify-center md:justify-start gap-3 text-sm text-slate-500 light:text-slate-400 mb-12"
@@ -47,24 +57,29 @@
                 <span class="text-primary-500 font-medium">منصة أعلاف</span>
             </nav>
 
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white dark:text-white light:text-slate-900"
-                data-aos="fade-up">مشروع <span
-                    class="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">منصة
-                    أعلاف</span></h1>
-            <p class="text-slate-400 light:text-slate-600 text-xl font-arabic" data-aos="fade-up">تطبيق ذكي لإدارة
-                وتجارة الأعلاف في المملكة</p>
+            <div class="inline-block px-4 py-1.5 rounded-full border border-primary-500/30 bg-primary-500/5 text-primary-400 text-sm font-bold mb-8"
+                data-aos="fade-up">
+                تفاصيل المشروع
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white dark:text-white light:text-slate-900"
+                data-aos="fade-up" data-aos-delay="50">مشروع <span class="text-gradient">منصة أعلاف</span></h1>
+            <p class="text-slate-400 light:text-slate-600 text-xl md:text-2xl max-w-3xl md:mr-0 md:ml-auto leading-relaxed font-arabic"
+                data-aos="fade-up" data-aos-delay="100">
+                تطبيق ذكي متكامل يربط بين تجار ومربي المواشي، ويوفر حلولاً لوجستية متطورة لتجارة الأعلاف.
+            </p>
         </div>
     </section>
 
     <!-- Project Content -->
-    <section class="py-24 bg-dark-bg transition-colors duration-500">
+    <section class="py-24 bg-dark-bg light:bg-white transition-colors duration-500">
         <div class="container mx-auto px-6 text-right">
             <div class="grid lg:grid-cols-3 gap-16">
                 <!-- Main Content -->
-                <div class="lg:col-span-2 space-y-16">
+                <div class="lg:col-span-2 space-y-20 min-w-0">
                     <!-- Slider -->
-                    <div class="space-y-6" data-aos="fade-up">
-                        <div class="swiper mainSlider rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+                    <div class="space-y-6 overflow-hidden" data-aos="fade-up">
+                        <div class="swiper mainSlider rounded-2xl md:rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="./pics/web-back1.jpg"
                                         class="w-full aspect-video object-cover" /></div>
@@ -76,16 +91,16 @@
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper thumbSlider">
+                        <div class="swiper thumbSlider overflow-hidden">
                             <div class="swiper-wrapper">
                                 <div
-                                    class="swiper-slide cursor-pointer rounded-2xl overflow-hidden border-2 border-transparent transition-all [&.swiper-slide-thumb-active]:border-primary-500">
+                                    class="swiper-slide cursor-pointer rounded-xl md:rounded-2xl overflow-hidden border-2 border-transparent transition-all [&.swiper-slide-thumb-active]:border-primary-500">
                                     <img src="./pics/web-back1.jpg" class="w-full aspect-video object-cover" /></div>
                                 <div
-                                    class="swiper-slide cursor-pointer rounded-2xl overflow-hidden border-2 border-transparent transition-all [&.swiper-slide-thumb-active]:border-primary-500">
+                                    class="swiper-slide cursor-pointer rounded-xl md:rounded-2xl overflow-hidden border-2 border-transparent transition-all [&.swiper-slide-thumb-active]:border-primary-500">
                                     <img src="./pics/background.png" class="w-full aspect-video object-cover" /></div>
                                 <div
-                                    class="swiper-slide cursor-pointer rounded-2xl overflow-hidden border-2 border-transparent transition-all [&.swiper-slide-thumb-active]:border-primary-500">
+                                    class="swiper-slide cursor-pointer rounded-xl md:rounded-2xl overflow-hidden border-2 border-transparent transition-all [&.swiper-slide-thumb-active]:border-primary-500">
                                     <img src="./pics/web-back4.jpg" class="w-full aspect-video object-cover" /></div>
                             </div>
                         </div>
@@ -94,15 +109,82 @@
                     <!-- Description -->
                     <div class="space-y-8" data-aos="fade-up">
                         <h2
-                            class="text-3xl font-bold text-white dark:text-white light:text-slate-900 flex items-center gap-4">
+                            class="text-3xl md:text-4xl font-bold text-white dark:text-white light:text-slate-900 flex items-center gap-4">
                             <span class="w-10 h-1 bg-primary-500 rounded-full"></span>
-                            عن المشروع
+                            نظرة عامة
                         </h2>
                         <div
                             class="prose prose-invert max-w-none text-slate-400 light:text-slate-600 leading-relaxed text-lg">
-                            <p>تعتبر منصة أعلاف من الحلول التقنية المبتكرة التي تهدف إلى تسهيل عمليات بيع وشراء الأعلاف
-                                وتتبع الشحنات بين الموردين والمستهلكين. تم تصميم المنصة لتوفر تجربة مستخدم سلسة مع نظام
-                                إدارة متكامل يضمن الشفافية والسرعة في الإنجاز.</p>
+                            <p>تعتبر منصة أعلاف نقلة نوعية في قطاع التجارة الزراعية بالمملكة، حيث تم تطويرها لمعالجة الفجوة بين الموردين والمستهلكين النهائيين. توفر المنصة واجهة سهلة الاستخدام تمكن المربين من الوصول إلى أفضل أنواع الأعلاف بأسعار تنافسية مع ضمان جودة المنتج وسرعة التوصيل.</p>
+                            <p class="mt-4">تم العمل على المشروع باستخدام أحدث التقنيات لضمان أداء عالي تحت ضغط الاستخدام المتزامن، مع نظام تنبيهات ذكي لمتابعة حالة الطلبات لحظة بلحظة.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Details: Challenges & Solutions -->
+                    <div class="grid md:grid-cols-2 gap-8" data-aos="fade-up">
+                        <div class="glass-card p-10 border-t-4 border-t-red-500/50">
+                            <h3 class="text-2xl font-bold mb-6 text-white dark:text-white light:text-slate-900">التحديات</h3>
+                            <ul class="space-y-4 text-slate-400 light:text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-exclamation text-red-500 mt-1"></i>
+                                    <span>صعوبة تتبع الشحنات في المناطق النائية.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-exclamation text-red-500 mt-1"></i>
+                                    <span>تذبذب أسعار الأعلاف في السوق المحلي بشكل يومي.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-exclamation text-red-500 mt-1"></i>
+                                    <span>الحاجة لنظام دفع مرن يدعم التحويلات الكبيرة.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-card p-10 border-t-4 border-t-green-500/50">
+                            <h3 class="text-2xl font-bold mb-6 text-white dark:text-white light:text-slate-900">الحلول</h3>
+                            <ul class="space-y-4 text-slate-400 light:text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span>دمج خرائط جوجل المتقدمة لتتبع دقيق للشحنات.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span>تطوير محرك تحديث أسعار تلقائي مرتبط بالسوق.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span>دمج بوابات دفع آمنة تدعم التحويلات البنكية ومبالغ سداد.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Technologies Used -->
+                    <div class="space-y-8" data-aos="fade-up">
+                        <h2 class="text-3xl font-bold text-white dark:text-white light:text-slate-900 flex items-center gap-4">
+                            <span class="w-10 h-1 bg-primary-500 rounded-full"></span>
+                            التقنيات المستخدمة
+                        </h2>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="glass-card px-6 py-4 flex items-center gap-3 group hover:border-primary-500 transition-all">
+                                <i class="fa-brands fa-laravel text-red-600 text-2xl"></i>
+                                <span class="font-bold text-white dark:text-white light:text-slate-900">Laravel</span>
+                            </div>
+                            <div class="glass-card px-6 py-4 flex items-center gap-3 group hover:border-primary-500 transition-all">
+                                <i class="fa-brands fa-vuejs text-green-500 text-2xl"></i>
+                                <span class="font-bold text-white dark:text-white light:text-slate-900">Vue.js</span>
+                            </div>
+                            <div class="glass-card px-6 py-4 flex items-center gap-3 group hover:border-primary-500 transition-all">
+                                <i class="fa-brands fa-swift text-orange-500 text-2xl"></i>
+                                <span class="font-bold text-white dark:text-white light:text-slate-900">Swift</span>
+                            </div>
+                            <div class="glass-card px-6 py-4 flex items-center gap-3 group hover:border-primary-500 transition-all">
+                                <i class="fa-brands fa-android text-green-600 text-2xl"></i>
+                                <span class="font-bold text-white dark:text-white light:text-slate-900">Android</span>
+                            </div>
+                            <div class="glass-card px-6 py-4 flex items-center gap-3 group hover:border-primary-500 transition-all">
+                                <i class="fa-solid fa-database text-blue-500 text-2xl"></i>
+                                <span class="font-bold text-white dark:text-white light:text-slate-900">MySQL</span>
+                            </div>
                         </div>
                     </div>
 
@@ -114,19 +196,19 @@
                             مميزات التطبيق
                         </h2>
                         <div class="grid md:grid-cols-2 gap-6 text-right">
-                            <div class="glass-card p-8 hover:bg-primary-600/5 transition-all">
-                                <i class="fa-solid fa-check-circle text-primary-500 text-2xl mb-4 block"></i>
-                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">نظام
-                                    تتبع مباشر</h4>
-                                <p class="text-slate-400 light:text-slate-600 text-sm">إمكانية تتبع الشحنات لحظة بلحظة
-                                    عبر الخريطة.</p>
+                            <div class="glass-card p-8 hover:bg-primary-600/5 transition-all group">
+                                <div class="w-12 h-12 bg-primary-500/10 text-primary-500 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-500 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-location-crosshairs text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">نظام تتبع مباشر</h4>
+                                <p class="text-slate-400 light:text-slate-600 text-sm leading-relaxed">إمكانية تتبع الشحنات لحظة بلحظة عبر الخريطة مع إشعارات دورية بحالة الشحنة.</p>
                             </div>
-                            <div class="glass-card p-8 hover:bg-primary-600/5 transition-all">
-                                <i class="fa-solid fa-check-circle text-primary-500 text-2xl mb-4 block"></i>
-                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">
-                                    بوابات دفع آمنة</h4>
-                                <p class="text-slate-400 light:text-slate-600 text-sm">دعم كامل لمدى، فيزا، وماستركارد
-                                    بضمان تام.</p>
+                            <div class="glass-card p-8 hover:bg-primary-600/5 transition-all group">
+                                <div class="w-12 h-12 bg-primary-500/10 text-primary-500 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-500 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-credit-card text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">بوابات دفع آمنة</h4>
+                                <p class="text-slate-400 light:text-slate-600 text-sm leading-relaxed">دعم كامل لكافة وسائل الدفع الإلكتروني بالمملكة مع ضمان تشفير كامل للبيانات.</p>
                             </div>
                         </div>
                     </div>
@@ -135,23 +217,23 @@
                 <!-- Sidebar -->
                 <div class="space-y-8">
                     <div class="glass-card p-8 sticky top-32" data-aos="fade-left">
-                        <h3 class="text-2xl font-bold mb-8 text-white dark:text-white light:text-slate-900">معلومات
-                            المشروع</h3>
+                        <h3 class="text-2xl font-bold mb-8 text-white dark:text-white light:text-slate-900">معلومات المشروع</h3>
                         <div class="space-y-6 mb-10">
-                            <div class="flex items-center justify-between border-b border-white/5 pb-4">
+                            <div class="flex items-center justify-between border-b border-white/5 light:border-slate-200 pb-4">
                                 <span class="text-slate-500">العميل</span>
-                                <span class="text-white dark:text-white light:text-slate-900 font-medium">شركة أعلاف
-                                    نجد</span>
+                                <span class="text-white dark:text-white light:text-slate-900 font-bold">شركة أعلاف نجد</span>
                             </div>
-                            <div class="flex items-center justify-between border-b border-white/5 pb-4">
+                            <div class="flex items-center justify-between border-b border-white/5 light:border-slate-200 pb-4">
                                 <span class="text-slate-500">التاريخ</span>
-                                <span class="text-white dark:text-white light:text-slate-900 font-medium">مارس
-                                    2024</span>
+                                <span class="text-white dark:text-white light:text-slate-900 font-bold">مارس 2024</span>
                             </div>
-                            <div class="flex items-center justify-between border-b border-white/5 pb-4">
+                            <div class="flex items-center justify-between border-b border-white/5 light:border-slate-200 pb-4">
                                 <span class="text-slate-500">التصنيف</span>
-                                <span class="text-white dark:text-white light:text-slate-900 font-medium">تطبيق
-                                    جوال</span>
+                                <span class="text-white dark:text-white light:text-slate-900 font-bold">تطبيق جوال</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-white/5 light:border-slate-200 pb-4">
+                                <span class="text-slate-500">المنصة</span>
+                                <span class="text-white dark:text-white light:text-slate-900 font-bold">iOS, Android</span>
                             </div>
                         </div>
                         <div class="space-y-4">
@@ -172,48 +254,105 @@
     </section>
 
     <!-- Related Projects -->
-    <section
-        class="py-20 bg-dark-bg light:bg-white border-t border-white/5 light:border-slate-100 transition-colors duration-500">
+    <section class="py-24 bg-dark-bg light:bg-slate-50 border-t border-white/5 light:border-slate-200 transition-colors duration-500 overflow-hidden">
         <div class="container mx-auto px-6">
-            <div class="flex items-center justify-between mb-12">
-                <h2 class="text-3xl font-bold text-white dark:text-white light:text-slate-900">مشاريع <span
-                        class="text-primary-500">مشابهة</span></h2>
-                <a href="our_projects.html" class="text-primary-500 font-bold hover:underline text-sm">جميع المشاريع</a>
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                <div data-aos="fade-left">
+                    <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase text-sm">أعمال مشابهة</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-slate-900">قد يعجبك <span class="text-gradient">أيضاً</span></h3>
+                </div>
+                <a href="our_projects.html" class="btn-outline !py-3 !px-6 text-sm" data-aos="fade-right">
+                    مشاهدة الكل <i class="fa-solid fa-grid-2 mr-2"></i>
+                </a>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-10">
                 <!-- Related Project 1 -->
-                <div class="group relative h-[400px] [perspective:1000px] overflow-hidden rounded-[2rem]">
-                    <div
-                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
-                        <div class="absolute inset-0 rounded-[2rem] overflow-hidden">
-                            <img src="./pics/ex-2.jpeg" alt="Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-dark-bg/60"></div>
-                        </div>
-                        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-                            <h4 class="text-xl font-bold text-white mb-1">تطبيق عابر</h4>
-                            <p class="text-slate-300 text-xs mb-4">تطبيق جوال للتوصيل</p>
-                            <a href="project_page.html"
-                                class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg self-end hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </a>
+                <div class="group relative h-[500px] rounded-[2.5rem] overflow-hidden bg-slate-900 border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[0_0_80px_-20px_rgba(37,80,255,0.4)]" data-aos="fade-up" data-aos-delay="0">
+                    <!-- Background Image -->
+                    <img src="./pics/ex-2.jpeg" alt="Project" class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:opacity-60">
+                    
+                    <!-- Gradient Overlays -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/20 to-transparent opacity-90 transition-all duration-500 group-hover:from-slate-950"></div>
+                    <div class="absolute inset-0 bg-primary-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                    <!-- Floating Glass Content -->
+                    <div class="absolute bottom-6 left-6 right-6 z-10 transition-all duration-700 translate-y-6 group-hover:translate-y-0">
+                        <div class="glass-card p-8 rounded-[2rem] border border-white/10 backdrop-blur-2xl relative overflow-hidden">
+                            <!-- Category & Arrow -->
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="px-4 py-1.5 rounded-full bg-primary-500/10 text-primary-400 text-[10px] font-bold uppercase tracking-widest border border-primary-500/20">تطبيق جوال</span>
+                                <div class="w-10 h-10 rounded-full bg-primary-500 text-white flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-500 shadow-lg shadow-primary-500/50">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Title & Description -->
+                            <h4 class="text-3xl font-bold text-white mb-2">تطبيق عابر</h4>
+                            <div class="max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-700 ease-in-out opacity-0 group-hover:opacity-100">
+                                <p class="text-slate-400 text-sm leading-relaxed mb-6">حلول لوجستية ذكية لخدمات التوصيل والنقل، تم تصميمها لتوفر تجربة مستخدم فريدة وسرعة في التنفيذ.</p>
+                                <a href="project_page.html" class="inline-block text-white font-bold text-sm hover:text-primary-400 transition-colors">مشاهدة الحالة الدراسية <i class="fa-solid fa-chevron-left text-[10px] mr-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Related Project 2 -->
-                <div class="group relative h-[400px] [perspective:1000px] overflow-hidden rounded-[2rem]">
-                    <div
-                        class="shimmer-card relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateX(5deg)_rotateY(-5deg)]">
-                        <div class="absolute inset-0 rounded-[2rem] overflow-hidden">
-                            <img src="./pics/ex-3.jpeg" alt="Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-dark-bg/60"></div>
+                <div class="group relative h-[500px] rounded-[2.5rem] overflow-hidden bg-slate-900 border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[0_0_80px_-20px_rgba(37,80,255,0.4)]" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Background Image -->
+                    <img src="./pics/ex-3.jpeg" alt="Project" class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:opacity-60">
+                    
+                    <!-- Gradient Overlays -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/20 to-transparent opacity-90 transition-all duration-500 group-hover:from-slate-950"></div>
+                    <div class="absolute inset-0 bg-primary-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                    <!-- Floating Glass Content -->
+                    <div class="absolute bottom-6 left-6 right-6 z-10 transition-all duration-700 translate-y-6 group-hover:translate-y-0">
+                        <div class="glass-card p-8 rounded-[2rem] border border-white/10 backdrop-blur-2xl relative overflow-hidden">
+                            <!-- Category & Arrow -->
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="px-4 py-1.5 rounded-full bg-accent-cyan/10 text-accent-cyan text-[10px] font-bold uppercase tracking-widest border border-accent-cyan/20">متجر إلكتروني</span>
+                                <div class="w-10 h-10 rounded-full bg-accent-cyan text-white flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-500 shadow-lg shadow-accent-cyan/50">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Title & Description -->
+                            <h4 class="text-3xl font-bold text-white mb-2">متجر مظهر</h4>
+                            <div class="max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-700 ease-in-out opacity-0 group-hover:opacity-100">
+                                <p class="text-slate-400 text-sm leading-relaxed mb-6">تجربة تسوق عصرية لمنتجات التجميل، تركز على سهولة الوصول للمنتجات وتجربة دفع آمنة وسريعة.</p>
+                                <a href="project_page.html" class="inline-block text-white font-bold text-sm hover:text-accent-cyan transition-colors">مشاهدة الحالة الدراسية <i class="fa-solid fa-chevron-left text-[10px] mr-2"></i></a>
+                            </div>
                         </div>
-                        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-                            <h4 class="text-xl font-bold text-white mb-1">متجر مظهر</h4>
-                            <p class="text-slate-300 text-xs mb-4">متجر إلكتروني للتجميل</p>
-                            <a href="project_page.html"
-                                class="w-10 h-10 bg-primary-500 text-white rounded-xl flex items-center justify-center text-lg self-end hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </a>
+                    </div>
+                </div>
+
+                <!-- Related Project 3 -->
+                <div class="group relative h-[500px] rounded-[2.5rem] overflow-hidden bg-slate-900 border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[0_0_80px_-20px_rgba(37,80,255,0.4)]" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Background Image -->
+                    <img src="./pics/ex-1.jpeg" alt="Project" class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:opacity-60">
+                    
+                    <!-- Gradient Overlays -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/20 to-transparent opacity-90 transition-all duration-500 group-hover:from-slate-950"></div>
+                    <div class="absolute inset-0 bg-primary-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                    <!-- Floating Glass Content -->
+                    <div class="absolute bottom-6 left-6 right-6 z-10 transition-all duration-700 translate-y-6 group-hover:translate-y-0">
+                        <div class="glass-card p-8 rounded-[2rem] border border-white/10 backdrop-blur-2xl relative overflow-hidden">
+                            <!-- Category & Arrow -->
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="px-4 py-1.5 rounded-full bg-accent-gold/10 text-accent-gold text-[10px] font-bold uppercase tracking-widest border border-accent-gold/20">موقع تعريفي</span>
+                                <div class="w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-500 shadow-lg shadow-accent-gold/50">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Title & Description -->
+                            <h4 class="text-3xl font-bold text-white mb-2">موقع أفق</h4>
+                            <div class="max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-700 ease-in-out opacity-0 group-hover:opacity-100">
+                                <p class="text-slate-400 text-sm leading-relaxed mb-6">واجهة رقمية تعكس الهوية المؤسسية للشركات الكبرى، مع تصميم يركز على الابتكار والاحترافية.</p>
+                                <a href="project_page.html" class="inline-block text-white font-bold text-sm hover:text-accent-gold transition-colors">مشاهدة الحالة الدراسية <i class="fa-solid fa-chevron-left text-[10px] mr-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

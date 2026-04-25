@@ -34,168 +34,207 @@
     <div id="main-nav-placeholder"></div>
     <div id="mobile-menu-placeholder"></div>
 
-    <!-- Header Section Improved -->
-    <section class="pt-48 pb-20 relative overflow-hidden transition-colors duration-500">
+    <!-- Header Section -->
+    <section class="pt-48 pb-24 relative overflow-hidden transition-colors duration-500">
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0">
+            <div class="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary-600/20 blur-[120px] rounded-full animate-pulse"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent-gold/10 blur-[120px] rounded-full"></div>
+        </div>
+
         <div class="container mx-auto px-6 relative z-10 text-center">
             <!-- Integrated Breadcrumbs -->
-            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12"
-                data-aos="fade-down">
+            <nav class="flex items-center justify-center gap-3 text-sm text-slate-500 light:text-slate-400 mb-12" data-aos="fade-down">
                 <a href="index.html" class="hover:text-primary-500 transition-colors">الرئيسية</a>
                 <i class="fa-solid fa-angle-left text-[10px]"></i>
                 <span class="text-primary-500 font-medium">المتاجر الإلكترونية</span>
             </nav>
 
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 text-white dark:text-white light:text-slate-900 leading-tight"
-                data-aos="fade-up">متاجر <span class="text-gradient">احترافية</span> للبيع الأونلاين</h1>
-            <p class="text-xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic"
-                data-aos="fade-up">
-                صمم متجرك الإلكتروني الآن وانطلق في عالم التجارة الرقمية مع حلول دفع متكاملة وتجربة مستخدم لا تُنسى.
+            <div class="inline-block px-4 py-1.5 rounded-full border border-primary-500/30 bg-primary-500/5 text-primary-400 text-sm font-bold mb-8" data-aos="fade-up">
+                نمو تجارتك يبدأ من هنا
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-bold mb-8 text-white dark:text-white light:text-slate-900 tracking-tight" data-aos="fade-up" data-aos-delay="50">
+                متاجر <span class="text-gradient">احترافية</span> للبيع الأونلاين
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 light:text-slate-600 max-w-3xl mx-auto leading-relaxed font-arabic" data-aos="fade-up" data-aos-delay="100">
+                صمم متجرك الإلكتروني الآن وانطلق في عالم التجارة الرقمية مع حلول دفع متكاملة وتجربة مستخدم لا تُنسى تزيد من مبيعاتك.
             </p>
         </div>
     </section>
 
-    <!-- Content Section -->
-    <section class="py-24 bg-dark-bg transition-colors duration-500">
-        <div class="container mx-auto px-6 text-right">
-            <div class="grid lg:grid-cols-2 gap-20 items-center mb-32">
-                <div data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-8 text-white dark:text-white light:text-slate-900">لماذا تختار مكة
-                        للتقنية لمتجرك؟</h2>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 bg-primary-600/20 text-primary-500 rounded-xl flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-bolt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-2">سرعة فائقة
-                                </h4>
-                                <p class="text-slate-400 text-sm">متاجر محسنة للأداء لضمان بقاء العميل وإتمام عملية
-                                    الشراء.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 bg-accent-cyan/20 text-accent-cyan rounded-xl flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-mobile-screen"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-2">متوافق مع
-                                    الجوال</h4>
-                                <p class="text-slate-400 text-sm">تجربة تسوق سلسة على كافة الأجهزة الذكية.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 bg-green-500/20 text-green-500 rounded-xl flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-shield-halved"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white dark:text-white light:text-slate-900 mb-2">حماية قصوى
-                                </h4>
-                                <p class="text-slate-400 text-sm">تشفير كامل لبيانات العملاء وعمليات الدفع.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div data-aos="fade-up">
-                    <div class="glass-card p-4">
-                        <img src="./pics/ecomm.png" alt="Ecommerce" class="rounded-2xl w-full shadow-2xl">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pricing -->
+    <!-- Pricing Section -->
+    <section class="py-24 bg-dark-bg light:bg-white transition-colors duration-500">
+        <div class="container mx-auto px-6">
             <div class="grid lg:grid-cols-3 gap-10">
-                <!-- Basic -->
-                <div class="pricing-card" data-aos="fade-up">
-                    <div class="mb-8 text-center">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">متجر بريميوم
-                        </h3>
-                        <p class="text-slate-500">للمشاريع المتوسطة</p>
+                <!-- Premium Plan -->
+                <div class="pricing-card group" data-aos="fade-up">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">متجر بريميوم</h3>
+                        <p class="text-slate-500 light:text-slate-500">للمشاريع المتوسطة والناشئة</p>
                     </div>
-                    <div class="mb-10 text-center">
+                    <div class="mb-10 flex items-baseline gap-2">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$450</span>
                         <p class="text-slate-500 mt-2">دفعة واحدة</p>
                     </div>
-                    <ul class="space-y-4 mb-10 flex-grow">
+                    <ul class="space-y-6 mb-12 flex-grow text-right">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>تصميم عصري وجذاب</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>تصميم عصري متوافق مع الجوال</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>لوحة تحكم سهلة</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>لوحة تحكم كاملة لإدارة المنتجات</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>ربط مع شركات الشحن</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>ربط مع شركات الشحن والدفع</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-primary-600 text-white font-bold hover:bg-primary-500 transition-all text-center">ابدأ
-                        الآن</a>
+                    <a href="contact.html" class="btn-outline w-full text-center py-4 rounded-2xl font-bold transition-all">ابدأ الآن</a>
                 </div>
 
-                <!-- Gold -->
-                <div class="pricing-card border-primary-500/50 bg-primary-500/5 dark:bg-primary-500/5 light:bg-primary-50/50"
-                    data-aos="fade-up">
-                    <div
-                        class="absolute top-0 right-0 bg-primary-600 text-white px-6 py-2 rounded-bl-3xl font-bold text-sm">
-                        الأكثر مبيعاً</div>
-                    <div class="mb-8 text-center">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">متجر في أي
-                            بي</h3>
-                        <p class="text-slate-500">للشركات الكبيرة</p>
+                <!-- Gold/VIP Plan -->
+                <div class="pricing-card popular group scale-105 border-primary-500/50" data-aos="fade-up">
+                    <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary-600 text-white px-6 py-1.5 rounded-full font-bold text-xs shadow-xl shadow-primary-500/20 uppercase tracking-wider">
+                        الأكثر مبيعاً
                     </div>
-                    <div class="mb-10 text-center">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">متجر في أي بي</h3>
+                        <p class="text-slate-500 light:text-slate-500">للشركات الكبيرة والطموحة</p>
+                    </div>
+                    <div class="mb-10 flex items-baseline gap-2">
                         <span class="text-5xl font-bold text-white dark:text-white light:text-slate-900">$850</span>
                         <p class="text-slate-500 mt-2">دفعة واحدة</p>
                     </div>
-                    <ul class="space-y-4 mb-10 flex-grow">
+                    <ul class="space-y-6 mb-12 flex-grow text-right">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>كافة مميزات البريميوم</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>تطبيق جوال أندرويد + IOS</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>تطبيق جوال أندرويد + iOS</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>دعم فني لمدة سنة</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500 flex items-center justify-center text-white text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>دعم فني متميز لمدة سنة</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-primary-600 text-white font-bold hover:bg-primary-500 transition-all text-center">ابدأ
-                        الآن</a>
+                    <a href="contact.html" class="btn-primary w-full text-center py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary-500/20">ابدأ الآن</a>
                 </div>
 
-                <!-- Custom -->
-                <div class="pricing-card" data-aos="fade-up">
-                    <div class="mb-8 text-center">
-                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">حلول مخصصة
-                        </h3>
-                        <p class="text-slate-500">حسب الطلب</p>
+                <!-- Custom Solution -->
+                <div class="pricing-card group" data-aos="fade-up">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white dark:text-white light:text-slate-900 mb-2">حلول مخصصة</h3>
+                        <p class="text-slate-500 light:text-slate-500">برمجة خاصة حسب احتياجاتك</p>
                     </div>
-                    <div class="mb-10 text-center">
-                        <span class="text-3xl font-bold text-white dark:text-white light:text-slate-900">حسب
-                            الاتفاق</span>
+                    <div class="mb-10 flex items-baseline gap-2">
+                        <span class="text-3xl font-bold text-white dark:text-white light:text-slate-900">حسب الاتفاق</span>
                         <p class="text-slate-500 mt-2">تواصل معنا</p>
                     </div>
-                    <ul class="space-y-4 mb-10 flex-grow">
+                    <ul class="space-y-6 mb-12 flex-grow text-right">
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                             <span>برمجة خاصة من الصفر</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
-                            <i class="fa-solid fa-check text-primary-500"></i>
-                            <span>تكامل مع أنظمة ERP</span>
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>تكامل مع أنظمة ERP المحاسبية</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300 dark:text-slate-300 light:text-slate-600">
+                            <div class="w-6 h-6 rounded-full bg-primary-500/20 flex items-center justify-center text-primary-500 text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>استشارات تقنية وتطويرية</span>
                         </li>
                     </ul>
-                    <a href="contact.html"
-                        class="w-full py-4 rounded-2xl bg-white/5 border border-white/10 dark:bg-white/5 dark:border-white/10 light:bg-slate-100 light:border-slate-200 font-bold hover:bg-white/10 light:hover:bg-slate-200 transition-all text-center">تواصل
-                        معنا</a>
+                    <a href="contact.html" class="btn-outline w-full text-center py-4 rounded-2xl font-bold transition-all">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 bg-slate-900/50 light:bg-slate-50 transition-colors duration-500">
+        <div class="container mx-auto px-6 text-right">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-left">
+                    <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase">لماذا تختارنا؟</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-slate-900 mb-8">نحن نبني <span class="text-gradient">مستقبل</span> تجارتك</h3>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group">
+                            <div class="w-14 h-14 shrink-0 bg-primary-500/10 text-primary-500 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary-500 group-hover:text-white transition-all duration-500">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">سرعة التحميل</h4>
+                                <p class="text-slate-400 light:text-slate-600">متاجرنا محسنة برمجياً لضمان أسرع وقت استجابة، مما يقلل من معدل الارتداد ويزيد المبيعات.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div class="w-14 h-14 shrink-0 bg-accent-cyan/10 text-accent-cyan rounded-2xl flex items-center justify-center text-2xl group-hover:bg-accent-cyan group-hover:text-white transition-all duration-500">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2 text-white dark:text-white light:text-slate-900">تجربة مستخدم مثالية</h4>
+                                <p class="text-slate-400 light:text-slate-600">تصاميم تركز على العميل وتسهل عملية الشراء من أي جهاز سواء كان جوال أو حاسوب.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-right">
+                    <div class="glass-card p-4 relative z-10">
+                        <img src="./pics/ecomm.png" alt="Ecommerce" class="rounded-2xl w-full shadow-2xl">
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-500/20 blur-[60px] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="py-24 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-primary-400 font-bold tracking-[0.2em] mb-4 uppercase">الأسئلة الشائعة</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-slate-900">أسئلة حول <span class="text-gradient">المتاجر</span></h3>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="glass-card overflow-hidden group">
+                    <button class="faq-btn w-full px-8 py-6 flex items-center justify-between text-right gap-4">
+                        <span class="text-lg font-bold text-white dark:text-white light:text-slate-900">هل يمكنني ربط المتجر ببوابات الدفع المحلية؟</span>
+                        <i class="fa-solid fa-plus text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-8">
+                        <p class="pb-6 text-slate-400 light:text-slate-600">نعم، نحن ندعم الربط مع كافة بوابات الدفع (مدى، تابي، تمارا، سترايب، باي بال) وغيرها من الحلول المحلية والعالمية.</p>
+                    </div>
+                </div>
+                <div class="glass-card overflow-hidden group">
+                    <button class="faq-btn w-full px-8 py-6 flex items-center justify-between text-right gap-4">
+                        <span class="text-lg font-bold text-white dark:text-white light:text-slate-900">هل المتجر يدعم تعدد العملات واللغات؟</span>
+                        <i class="fa-solid fa-plus text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-8">
+                        <p class="pb-6 text-slate-400 light:text-slate-600">بالتأكيد، يمكننا تهيئة المتجر ليدعم لغات متعددة (عربي/إنجليزي) وعملات مختلفة مع تحويل تلقائي حسب موقع العميل.</p>
+                    </div>
                 </div>
             </div>
         </div>
